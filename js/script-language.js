@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     const pageName = window.location.pathname.split("/").pop().replace(".html", "") || "index";
 
     try {
-        const response = await fetch(`/translations/${pageName}`);
+        const response = await fetch(`'https://api-dmupbc76bq-uc.a.run.app/translations/${pageName}`);
         if (!response.ok) {
             throw new Error(`Failed to load translations for page: ${pageName}`);
         }
