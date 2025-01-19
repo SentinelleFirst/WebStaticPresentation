@@ -1,0 +1,228 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: black;
+}
+
+.footer-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+        padding: 30px 5%;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 40px 5%;
+    }
+
+    @media (min-width: 870px) {
+        justify-content: start;
+    }
+
+    @media (max-width: 870px) {
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.footer-permalinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 50px;
+
+    @media (max-width: 1200px) {
+        padding: 30px 5%;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 10px 5%;
+    }
+
+    @media (max-width: 870px) {
+        flex-direction: column-reverse;
+        
+        h2 {
+            margin-top: 50px;
+            align-self: self-start;
+        }
+    }
+
+    .permalinks {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: center;
+        gap: 20px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            align-items: center;
+        }
+    }
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    @media (max-width: 1200px) {
+        padding: 30px 5%;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 40px 5%;
+    }
+
+    @media (min-width: 750px) {
+        align-items: end;
+    }
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    color: white;
+
+    @media (min-width: 750px) {
+        max-width: 500px;
+    }
+
+    @media (max-width: 750px) {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    .newsletter-fil{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+
+        .form {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #FACB01;
+            color: black;
+        }
+    }
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 120px;
+    color: white;
+    
+    @media (min-width: 750px) {
+        max-width: 500px;
+        align-items: end;
+
+        .list-info {
+            align-items: end;
+        }
+    }
+
+    @media (max-width: 750px) {
+        max-width: 100%;
+        width: 100%;
+        align-items: center;
+
+        .list-info {
+            align-items: center;
+        }
+    }
+
+    .list-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            color: white;
+            font-size: 17px;
+            text-align: end;
+
+            img{
+                width: 40px;
+            }
+        }
+    }
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FACB01;
+    padding: 10px 5%;
+
+    @media (max-width: 550px) {
+        align-items: center;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+
+    @media (min-width: 550px) {
+        align-items: end;
+    }
+
+    h6 {
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-style: italic;
+        text-align: center;
+    }
+
+    h6 img {
+        width: 20px;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 30px;
+
+        img {
+            width: 40px;
+        }
+    }
+}

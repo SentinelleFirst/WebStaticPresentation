@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahel Politica</title>
+    <link rel="icon" href="images/favicon.svg" type="image/png">
+    <link href="css/indexStyle.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BPX26NN2Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6BPX26NN2Q');
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu-left">
+                <a href="index.html"><img alt="" src="images/logo_long_blanc.svg" class="menu-logo" /></a>
+                <a href="index.html"><img alt="" src="images/favicon.svg" class="menu-logo-mobile" /></a>
+                <div class="menu-link" id="menu-link">
+                    <div class="options">
+
+                        <div class="menu-option">
+                            <div class="option-title">
+                                <p data-translate-key="header-option-1-title">Who we are</p>
+                                <img src="images/dropdown-arrow-menu.svg" alt="">
+                            </div>
+                            <div class="list-options">
+                                <a data-translate-key="header-option-1-menu-1" href="about-us.html">About us</a>
+                                <a data-translate-key="header-option-1-menu-2" href="about-us.html#team">Our team</a>
+                                <a data-translate-key="header-option-1-menu-3" href="about-us.html#clients">Partners</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-option">
+                            <div class="option-title">
+                                <p data-translate-key="header-option-2-title">What we do</p>
+                                <img src="images/dropdown-arrow-menu.svg" alt="">
+                            </div>
+                            <div class="list-options">
+                                <a data-translate-key="header-option-2-menu-1" href="training.html">Training &
+                                    Workshops</a>
+                                <a data-translate-key="header-option-2-menu-2" href="consulting.html">Consulting</a>
+                                <a data-translate-key="header-option-2-menu-3" href="keynote.html">Keynote</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-option">
+                            <div class="option-title">
+                                <p data-translate-key="header-option-3-title">News</p>
+                                <img src="images/dropdown-arrow-menu.svg" alt="">
+                            </div>
+                            <div class="list-options">
+                                <a data-translate-key="header-option-3-menu-1" href="events.html">Events</a>
+                                <a data-translate-key="header-option-3-menu-2" href="publications.html">Publications</a>
+                                <a data-translate-key="header-option-3-menu-3" href="reports.html">In-depth analysis</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-global">
+                        <a data-translate-key="header-contact-us" href="contact.html"><img
+                                src="images/footer-icon-phone.svg" alt="">Contact us</a>
+                        <div class="lang-btn">
+
+                            <select id="mobilLangDropdown" title="Choose a language">
+                                <option class="option" value="en">Global - EN</option>
+                                <option class="option" value="fr">Global - FR</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-end">
+                <div class="menu-global">
+                    <a data-translate-key="header-contact-us" href="contact.html">Contact us</a>
+                    <select id="desktopLangDropdown" title="Choose a language">
+                        <option class="option" value="en">Global - EN</option>
+                        <option class="option" value="fr">Global - FR</option>
+                    </select>
+                </div>
+                <div class="menu-button">
+                    <img id="menu-search-icon" src="images/menu-search-icon.svg" alt="">
+                    <img id="menu-open" src="images/menu-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="carousel-container">
+            <div class="carousel" id="hero-events">
+
+
+            </div>
+            <div class="dots" id="dots"></div>
+        </section>
+        <section class="blog">
+            <div class="blog-title">
+                <h1 data-translate-key="index-blog-title">Explore our latest insights and updates here.</h1>
+                <div class="divider"></div>
+            </div>
+            <div class="articles">
+                <div class="first-blog-box" id="first-blog-box">
+                    <!-- The latest article will be dynamically inserted here -->
+                </div>
+                <div class="blog-boxs" id="blog-boxs">
+                    <!-- The other articles will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+        <section class="what-we-do">
+            <img src="images/pexels-pnw-prod-8276369.jpg" alt="" class="left-img">
+            <div class="text">
+                <div class="title">
+                    <h1 data-translate-key="index-what-we-do-title">Your path to resilience</h1>
+                    <div class="divider"></div>
+                    <p data-translate-key="index-what-we-do-subtitle">Navigate challenges, unlock new opportunities.</p>
+                </div>
+                <div class="links">
+                    <div class="link link1">
+                        <img src="images/Capture d’écran 2024-08-18 132034.png" alt="" class="link-img">
+                        <h4 data-translate-key="index-what-we-do-bloc-1-text">Tailored solutions for complex
+                            environments.</h4>
+                        <a data-translate-key="index-what-we-do-bloc-1-link" href="consulting.html">Our services<img
+                                src="images/right-arrow-yellow.svg" alt="" class="arrow-icon"></a>
+                    </div>
+                    <div class="link link2">
+                        <img src="images/conference.jpeg" alt="" class="link-img">
+                        <h4 data-translate-key="index-what-we-do-bloc-2-text">Master the dynamics of the Sahel.</h4>
+                        <a data-translate-key="index-what-we-do-bloc-2-link" href="training.html">Our trainings<img
+                                src="images/right-arrow-yellow.svg" alt="" class="arrow-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="text">
+                <div class="title">
+                    <h1 data-translate-key="index-services-title">Anticipate, Protect, Succeed</h1>
+                    <div class="divider"></div>
+                    <p data-translate-key="index-services-text">Our services help you assess risks, manage crises, and
+                        strengthen the security of your operations
+                        in the Sahel region.</p>
+                </div>
+                <img src="images/services-home.png" alt="">
+            </div>
+            <div class="service-options">
+                <div class="option">
+                    <img src="images/audit-back.jpg" alt="" class="back-img">
+                    <div class="title">
+                        <h5 data-translate-key="index-services-service-1-title">Sahel Resilience Audit</h5>
+                        <div class="description">
+                            <p data-translate-key="index-services-service-1-text">Gain clarity on crisis impact and
+                                boost organizational resilience in volatile
+                                environments.</p>
+                            <a data-translate-key="index-services-service-link" href="consulting.html#service1">See
+                                more<img src="images/right-arrow-yellow.svg" alt="" class="arrow-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <img src="images/risk-prevention.jpg" alt="" class="back-img">
+                    <div class="title">
+                        <h5 data-translate-key="index-services-service-2-title">Risk Prevention Strategy</h5>
+                        <div class="description">
+                            <p data-translate-key="index-services-service-2-text">Identify vulnerabilities and
+                                strengthen your risk management framework with tailored
+                                strategies.</p>
+                            <a data-translate-key="index-services-service-link" href="consulting.html#service2">See
+                                more<img src="images/right-arrow-yellow.svg" alt="" class="arrow-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <img src="images/pexels-uniqueton-4021262.jpg" alt="" class="back-img">
+                    <div class="title">
+                        <h5 data-translate-key="index-services-service-3-title">Crisis Action Plan</h5>
+                        <div class="description">
+                            <p data-translate-key="index-services-service-3-text">Prepare for the unexpected with
+                                comprehensive crisis scenarios and security plans.</p>
+                            <a data-translate-key="index-services-service-link" href="consulting.html#service3">See
+                                more<img src="images/right-arrow-yellow.svg" alt="" class="arrow-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <img src="images/pexels-goumbik-590016.jpg" alt="" class="back-img">
+                    <div class="title">
+                        <h5 data-translate-key="index-services-service-4-title">Growth Accelerator</h5>
+                        <div class="description">
+                            <p data-translate-key="index-services-service-4-text">Seize opportunities with strategic
+                                insights and risk mitigation for sustainable expansion
+                                in the Sahel.</p>
+                            <a data-translate-key="index-services-service-link" href="consulting.html#service4">See
+                                more<img src="images/right-arrow-yellow.svg" alt="" class="arrow-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="training">
+            <div class="text">
+                <h1 data-translate-key="index-training-title">Master Sahel Challenges</h1>
+                <div class="divider"></div>
+                <p data-translate-key="index-training-text">Our training programs equip you with the tools to navigate
+                    geopolitical risks and build resilience in
+                    the Sahel region.</p>
+                <img src="images/business-presentation.svg" alt="">
+            </div>
+            <div class="training-options">
+                <a href="training.html#training1">
+                    <img src="images/home-page-carroussel-2.png" alt="" class="back-img">
+                    <div class="title">
+                        <h6 data-translate-key="index-training-title-1">Sahel <span
+                                style="color: #FACB01;">geopolitical</span> analysis</h6>
+                        <div class="caption-divider"></div>
+                    </div>
+                    <img src="images/right-arrow-white.svg" alt="" class="arrow-icon">
+
+                </a>
+                <a href="training.html#training2">
+                    <img src="images/article1.png" alt="" class="back-img">
+                    <div class="title">
+                        <h6 data-translate-key="index-training-title-2"><span style="color: #FACB01;">Risk Management
+                                and Security</span> in the Sahel</h6>
+                        <div class="caption-divider"></div>
+                    </div>
+                    <img src="images/right-arrow-white.svg" alt="" class="arrow-icon">
+                </a>
+                <a href="training.html#training3">
+                    <img src="images/pexels-pnw-prod-8276369.jpg" alt="" class="back-img">
+                    <div class="title">
+                        <h6 data-translate-key="index-training-title-3">Strategies for <span
+                                style="color: #FACB01;">Engagement and Collaboration</span> in the
+                            Sahel</h6>
+                        <div class="caption-divider"></div>
+                    </div>
+                    <img src="images/right-arrow-white.svg" alt="" class="arrow-icon">
+                </a>
+                <a href="training.html#training4">
+                    <img src="images/Homepage-picture-scaled.jpg" alt="" class="back-img">
+                    <div class="title">
+                        <h6 data-translate-key="index-training-title-4">Open Source
+                            Intelligence (<span style="color: #FACB01;">OSINT</span>) in the Sahel</h6>
+                        <div class="caption-divider"></div>
+                    </div>
+                    <img src="images/right-arrow-white.svg" alt="" class="arrow-icon">
+                </a>
+            </div>
+        </section>
+        <section class="our-team">
+            <div class="team-imgs">
+                <div class="column1">
+                    <img src="images/team-ceo.png" alt="" class="img1">
+                    <img src="images/team-awalou.png" alt="" class="img2">
+                </div>
+                <div class="column2">
+                    <img src="images/team-idrissa.png" alt="" class="img1">
+                    <img src="images/team-joris.jpg" alt="" class="img2">
+                </div>
+            </div>
+            <div class="text">
+                <h1 data-translate-key="index-our-team-title">Discover more about who we are</h1>
+                <div class="divider"></div>
+                <p data-translate-key="index-our-team-text">Explore the heart of Sahel Politica. Learn about our
+                    mission, vision, and the dedicated team working
+                    to guide organizations through the complexities of the Sahel region. </p>
+                <a href="about-us.html">
+                    <div class="btn-nice">
+                        <span data-translate-key="index-our-team-button">WHO WE ARE</span>
+                        <img src="images/btn-arrow-right.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="our-clients">
+            <h1 data-translate-key="index-our-client-title">They trust us</h1>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="images/undp-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/gcsp-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/suisse-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/caritas-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/international-SOS-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/undp-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/gcsp-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/suisse-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/caritas-logo.png" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/international-SOS-logo.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button id="scrollToTopBtn" title="Go to top">↑</button>
+        <footer>
+            <div class="footer-logo">
+                <img src="images/logo_long_blanc.svg" alt="Logo">
+            </div>
+
+            <div class="footer-permalinks">
+                <h2 data-translate-key="footer-subscribe-title">Subscribe</h2>
+                <div class="permalinks">
+                    <a data-translate-key="footer-permalink-1" href="contact.html">Contact us</a>
+                    <a data-translate-key="footer-permalink-2" href="policies.html?option=privacy-policy">Privacy
+                        policy</a>
+                    <a data-translate-key="footer-permalink-3" href="policies.html?option=terms-of-use">Terms of use</a>
+                    <a data-translate-key="footer-permalink-4"
+                        href="policies.html?option=conditions-of-sales">Conditions of sales</a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p data-translate-key="footer-newsletter-paragraphe">Stay up to date with all our news by
+                        subscribing to our newsletter.</p>
+                        <form action="" class="newsletter-fil">
+                            <div class="form">
+                                <input type="text" name="firstname" class="form-control newsletter-form"
+                                    id="newsletterFirstname" placeholder="First name">
+                                <input type="email" class="form-control newsletter-form" id="newsletterEmail"
+                                    placeholder="email address">
+                            </div>
+                            <button data-translate-key="footer-submit-button" type="button" class="btn btn-outline-warning"
+                                id="registerButton">Submit</button>
+                        </form>
+                </div>
+                <div class="footer-right">
+                    <div class="list-info">
+                        <div class="info">
+                            <p>Sahel Politica, Chamerstrasse 172, 6300 Zug</p>
+                            <img alt="" class="icon-info-footer" src="images/footer-icon-location.svg">
+                        </div>
+                        <div class="info">
+                            <p>info@sahelpolitica.ch</p>
+                            <img alt="" class="icon-info-footer" src="images/footer-icon-email.svg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyright">
+                <h6><img src="images/copyright.svg" alt=""> sahel policica, 2025, All rights reserved</h6>
+                <div class="socials">
+                    <a target="_blank" href="https://www.youtube.com/@SahelPolitica_A"><img alt="Youtube"
+                            src="images/footer-youtube-icon.svg"></a>
+                    <a target="_blank" href="https://x.com/SahelPolitica"><img alt="X"
+                            src="images/footer-x-icon.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/sahelpolitica/"><img alt="Linkedin"
+                            src="images/footer-linkedin-icon.svg"></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const menuIcon = document.getElementById('menu-open');
+        const dropLink = document.getElementById('menu-link');
+
+        const openIcon = 'images/menu-icon.svg';  // Image pour ouvrir le menu
+        const closeIcon = 'images/menu-close.svg';  // Image pour fermer le menu
+
+        menuIcon.addEventListener('click', function () {
+            if (dropLink.classList.contains('active')) {
+                // Si le menu est déjà ouvert, applique l'animation de fermeture
+                dropLink.classList.remove('active');
+                dropLink.classList.add('hide');
+
+                // Attends la fin de l'animation (1s ici), puis masque complètement l'élément
+                setTimeout(function () {
+                    dropLink.classList.remove('hide');
+                    dropLink.style.display = 'none'; // Cache le menu après l'animation
+                }, 1000); // Temps de l'animation
+
+                // Change l'icône en "menu ouvert"
+                menuIcon.src = openIcon;
+            } else {
+                // Si le menu est fermé, montre-le et applique l'animation d'ouverture
+                dropLink.style.display = 'flex'; // Affiche le menu avant l'animation
+                dropLink.classList.add('active');
+
+                // Change l'icône en "fermer"
+                menuIcon.src = closeIcon;
+            }
+        });
+
+        // Sélectionner tous les menus dans .menu-link
+        const menus = document.querySelectorAll('.menu-link .menu-option');
+
+        // Ajouter un écouteur d'événement de clic pour chaque bouton
+        menus.forEach(menu => {
+            menu.addEventListener('click', function () {
+                // Si ce bouton est déjà actif, on le désactive (on retire 'active')
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active');
+                } else {
+                    // Désactiver le bouton actif actuel s'il y en a un
+                    const activeButton = document.querySelector('.other-filter .btn.active');
+                    if (activeButton) {
+                        activeButton.classList.remove('active');
+                    }
+                    // Activer le bouton cliqué
+                    this.classList.add('active');
+                }
+            });
+        });
+
+    </script>
+    <script>
+        // Sélectionner tous les éléments avec la classe .option
+        const options = document.querySelectorAll('.option');
+
+        // Ajouter un événement de clic à chaque élément
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                // Supprimer la classe .open de tous les éléments sauf l'élément sélectionné
+                options.forEach(opt => {
+                    if (opt !== option) {
+                        opt.classList.remove('open');
+                    }
+                });
+                // Ajouter ou supprimer la classe .open à l'élément sélectionné
+                option.classList.toggle('open');
+            });
+        });
+    </script>
+    <script>
+        // Fetch events and articles from the backend
+        async function fetchData(endpoint, containerId, dotsContainerId = null) {
+            const container = document.getElementById(containerId);
+            const dotsContainer = dotsContainerId ? document.getElementById(dotsContainerId) : null;
+
+            try {
+                const response = await fetch(endpoint);
+                const data = await response.json();
+
+                if (containerId === 'hero-events') {
+                    renderEvents(data, container, dotsContainer);
+                } else if (containerId === 'first-blog-box') {
+                    renderArticles(data, container, document.getElementById('blog-boxs'));
+                }
+            } catch (error) {
+                console.error(`Error fetching ${endpoint}:`, error);
+            }
+        }
+
+        // Render events
+        function renderEvents(events, container, dotsContainer) {
+            container.innerHTML = '';
+            dotsContainer.innerHTML = '';
+            // Trier les événements par date (du plus récent au plus ancien)
+            events.sort((a, b) => {
+                const dateA = new Date(a.start.seconds * 1000 + a.start.nanoseconds / 1e6); // Conversion en millisecondes
+                const dateB = new Date(b.start.seconds * 1000 + b.start.nanoseconds / 1e6);
+                return dateB - dateA; // Tri du plus récent au plus ancien
+            });
+            events.forEach((event, index) => {
+                const eventElement = document.createElement('div');
+                eventElement.classList.add('item');
+                if (index === 0) eventElement.classList.add('active');
+
+                eventElement.innerHTML = `
+                    <img src="${event.imageUrl}" class="backimg">
+                <div class="caption">
+                    <h4 class="langue-en">Lates insighs and events</h4>
+                    <h4 class="langue-fr">Nos derniers évènements</h4>
+                    <div class="divider"></div>    
+                    <h1 class="langue-en">${event.title}</h1>
+                    <h1 class="langue-fr">${event.titleFR}</h1>
+                    <a class="langue-en" target="_blank" href="${event.linkedinPost}">Read more<img src="images/right-arrow-yellow.svg" alt=""
+                    class="arrow-icon"></a>
+                    <a class="langue-fr" target="_blank" href="${event.linkedinPost}">Voir plus<img src="images/right-arrow-yellow.svg" alt=""
+                    class="arrow-icon"></a>
+                </div>
+                `;
+                container.appendChild(eventElement);
+
+                const dotElement = document.createElement('div');
+                dotElement.classList.add('dot');
+                if (index === 0) dotElement.classList.add('active');
+                dotElement.innerHTML = `
+                <div class="divider constant-divider">
+                    <div class="divider progress-divider"></div>
+                </div>
+                <h5 class="langue-en">${event.smallTitle}</h5>
+                <h5 class="langue-fr">${event.smallTitleFR}</h5>
+            `;
+                dotsContainer.appendChild(dotElement);
+
+                // Initialize carousel functionality AFTER events have been loaded
+                initializeCarousel();
+            });
+        }
+
+        // Function to initialize carousel functionality
+        function initializeCarousel() {
+            let carousel = document.querySelector(".carousel");
+            let items = carousel.querySelectorAll(".item");
+            let dots = document.querySelectorAll(".dot");
+            let currentIndex = 0;
+            const intervalTime = 4000; // Time in milliseconds for each slide
+
+            // Function to show a specific item
+            function showItem(index) {
+                items.forEach((item, idx) => {
+                    if (idx === index) {
+                        item.classList.add("active");
+                        dots[idx].classList.add("active");
+                    } else {
+                        item.classList.remove("active");
+                        dots[idx].classList.remove("active");
+                    }
+                });
+                currentIndex = index;
+            }
+
+            // Function to show the next item
+            function showNextItem() {
+                let nextIndex = (currentIndex + 1) % items.length;
+                showItem(nextIndex);
+            }
+
+            // Event listeners for dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    showItem(index);
+                });
+            });
+
+            // Automatically change slides at the set interval
+            setInterval(showNextItem, intervalTime);
+        }
+
+
+        // Render articles
+        function renderArticles(articles, firstContainer, container) {
+            // Trier les articles par date (du plus récent au plus ancien)
+            articles.sort((a, b) => {
+                const dateA = new Date(a.date.seconds * 1000 + a.date.nanoseconds / 1e6); // Conversion en millisecondes
+                const dateB = new Date(b.date.seconds * 1000 + b.date.nanoseconds / 1e6);
+                return dateB - dateA; // Tri du plus récent au plus ancien
+            });
+            const firstElement = document.createElement('div');
+            firstElement.classList.add('first-article');
+            firstElement.innerHTML = `
+                <img src="${articles[0].imageUrl}">
+                            <div class="blog-article-title">
+                                <h4 class="langue-en">${articles[0].smallTitle}</h4>
+                                <h4 class="langue-fr">${articles[0].smallTitleFR}</h4>
+                                <p>${new Date(articles[0].date.seconds * 1000).toLocaleString()}</p>
+                            </div>
+                            <div class="blog-article-info">
+                                <p class="langue-en">${articles[0].title}</p>
+                                <p class="langue-fr">${articles[0].titleFR}</p>
+                                <a class="langue-en" href="publications.html?id=${articles[0].id}">Read more<img src="images/right-arrow-yellow.svg" alt=""
+                                class="arrow-icon"></a>
+                                <a class="langue-fr" href="publications.html?id=${articles[0].id}">Voir plus<img src="images/right-arrow-yellow.svg" alt=""
+                                class="arrow-icon"></a>
+                            </div>
+            `;
+            firstContainer.appendChild(firstElement);
+
+            container.innerHTML = '';
+            articles.slice(1).forEach(article => {
+                const articleElement = document.createElement('div');
+                articleElement.classList.add('blog-article');
+                articleElement.innerHTML = `
+                    <img src="${article.imageUrl}">
+                            <div class="blog-article-title">
+                                <h6 class="langue-en">${article.smallTitle}</h6>
+                                <h6 class="langue-fr">${article.smallTitleFR}</h6>
+                                <p>${new Date(article.date.seconds * 1000).toLocaleString()}</p>
+                                <a class="langue-en" href="publications.html?id=${article.id}">Read more<img src="images/right-arrow-yellow.svg" alt=""
+                                class="arrow-icon"></a>
+                                <a class="langue-fr" href="publications.html?id=${article.id}">Voir plus<img src="images/right-arrow-yellow.svg" alt=""
+                                class="arrow-icon"></a>
+                            </div>
+                `;
+                container.appendChild(articleElement)
+            });
+        }
+
+        // Fetch data on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchData('https://api-dmupbc76bq-uc.a.run.app/api/events', 'hero-events', 'dots');
+            fetchData('https://api-dmupbc76bq-uc.a.run.app/api/articles', 'first-blog-box');
+        });
+    </script>
+    <script src="js/indexJs.js"></script>
+    <script>
+        // Affiche le bouton lorsque l'utilisateur fait défiler vers le bas de 20 pixels à partir du haut du document
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // Lorsque l'utilisateur clique sur le bouton, fait défiler vers le haut de la page
+        document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+            document.body.scrollTop = 0; // Pour Safari
+            document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+        });
+    </script>
+    <script src="js/script-language.js"></script>
+</body>
+
+</html>
