@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (!dropdown) {
         return;
     }
-
+    let translationsEN = {};
+    let translationsFR = {};
     const pageName = window.location.pathname.split("/").pop().replace(".html", "") || "index";
 
     try {
@@ -16,8 +17,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         const translations = await response.json();
 
         // Assigner aux variables globales
-        window.translationsEN = translations.data.translationsEN;
-        window.translationsFR = translations.data.translationsFR;
+        translationsEN = translations.data.translationsEN;
+        translationsFR = translations.data.translationsFR;
         window.translateHeaderFooterEN = translations.constantData.translateHeaderFooterEN;
         window.translateHeaderFooterFR = translations.constantData.translateHeaderFooterFR;
     } catch (error) {
