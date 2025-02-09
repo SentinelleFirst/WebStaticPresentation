@@ -4,12 +4,11 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (!dropdown) {
         return;
     }
-    let translationsEN = {};
-    let translationsFR = {};
+
     const pageName = window.location.pathname.split("/").pop().replace(".html", "") || "index";
 
     try {
-        const response = await fetch('https://api-dmupbc76bq-uc.a.run.app/translations/${pageName}');
+        const response = await fetch(`https://api-dmupbc76bq-uc.a.run.app/translations/${pageName}`);
         if (!response.ok) {
             throw new Error(`Failed to load translations for page: ${pageName}`);
         }
@@ -17,8 +16,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         const translations = await response.json();
 
         // Assigner aux variables globales
-        translationsEN = translations.data.translationsEN;
-        translationsFR = translations.data.translationsFR;
+        window.translationsEN = translations.data.translationsEN;
+        window.translationsFR = translations.data.translationsFR;
         window.translateHeaderFooterEN = translations.constantData.translateHeaderFooterEN;
         window.translateHeaderFooterFR = translations.constantData.translateHeaderFooterFR;
     } catch (error) {
