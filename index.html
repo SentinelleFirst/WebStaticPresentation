@@ -572,7 +572,26 @@
             });
             const firstElement = document.createElement('div');
             firstElement.classList.add('first-article');
-            firstElement.innerHTML = `
+            if(articles[0].type === "report")
+            {
+                firstElement.innerHTML = `
+                <img src="${articles[0].imageUrl}">
+                            <div class="blog-article-title">
+                                <h4 class="langue-en">${articles[0].title}</h4>
+                                <h4 class="langue-fr">${articles[0].titleFR}</h4>
+                                <p>${new Date(articles[0].date.seconds * 1000).toLocaleString()}</p>
+                            </div>
+                            <div class="blog-article-info">
+                                <p class="langue-en">${articles[0].subtitle}</p>
+                                <p class="langue-fr">${articles[0].subtitleFR}</p>
+                                <a class="langue-en" href="report-preview.html?id=${articles[0].id}">Read more<img src="images/right-arrow-yellow.svg" alt=""
+                                class="arrow-icon"></a>
+                                <a class="langue-fr" href="report-preview.html?id=${articles[0].id}">Voir plus<img src="images/right-arrow-yellow.svg" alt=""
+                                class="arrow-icon"></a>
+                            </div>
+            `;
+            } else {
+                firstElement.innerHTML = `
                 <img src="${articles[0].imageUrl}">
                             <div class="blog-article-title">
                                 <h4 class="langue-en">${articles[0].smallTitle}</h4>
@@ -588,13 +607,30 @@
                                 class="arrow-icon"></a>
                             </div>
             `;
+            }
+            
             firstContainer.appendChild(firstElement);
 
             container.innerHTML = '';
             articles.slice(1).forEach(article => {
                 const articleElement = document.createElement('div');
                 articleElement.classList.add('blog-article');
-                articleElement.innerHTML = `
+                if(article.type === "report")
+                {
+                    articleElement.innerHTML = `
+                    <img src="${article.imageUrl}">
+                            <div class="blog-article-title">
+                                <h6 class="langue-en">${article.title}</h6>
+                                <h6 class="langue-fr">${article.titleFR}</h6>
+                                <p>${new Date(article.date.seconds * 1000).toLocaleString()}</p>
+                                <a class="langue-en" href="report-preview.html?id=${article.id}">Read more<img src="images/right-arrow-yellow.svg" alt=""
+                                class="arrow-icon"></a>
+                                <a class="langue-fr" href="report-preview.html?id=${article.id}">Voir plus<img src="images/right-arrow-yellow.svg" alt=""
+                                class="arrow-icon"></a>
+                            </div>
+                `;
+                } else {
+                    articleElement.innerHTML = `
                     <img src="${article.imageUrl}">
                             <div class="blog-article-title">
                                 <h6 class="langue-en">${article.smallTitle}</h6>
@@ -606,6 +642,8 @@
                                 class="arrow-icon"></a>
                             </div>
                 `;
+                }
+                
                 container.appendChild(articleElement)
             });
         }
@@ -613,7 +651,7 @@
         // Fetch data on page load
         document.addEventListener('DOMContentLoaded', () => {
             fetchData('https://api-dmupbc76bq-uc.a.run.app/api/events', 'hero-events', 'dots');
-            fetchData('https://api-dmupbc76bq-uc.a.run.app/api/articles', 'first-blog-box');
+            fetchData('https://api-dmupbc76bq-uc.a.run.app/api/latest-insight', 'first-blog-box');
         });
     </script>
     <script src="js/indexJs.js"></script>
