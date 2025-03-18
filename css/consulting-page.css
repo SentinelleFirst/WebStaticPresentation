@@ -122,7 +122,9 @@
 
         h1 {
             margin-bottom: 30px;
-
+            font-size: 36px;
+            color: #FFC501;
+            font-weight: bold;
         }
 
         p {
@@ -160,39 +162,75 @@ a {
 }
 
 
+@media (min-width: 600px) {
+    .service-text {
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            width: 40%;
+    
+            h1 {
+                font-size: 25px;
+    
+            }
+    
+            h3 {
+    
+                color: #848404;
+            }
+        }
+    
+        p {
+            padding: 20px 0px 20px 50px;
+            border-left: 2px solid black;
+            width: 55%;
+            font-size: 20px;
+            text-align: justify;
+        }
+    }    
+}
 
-.service-text {
-    display: flex;
-    max-width: 100%;
-    justify-content: space-between;
-    align-items: center;
-
-    .title {
+@media (max-width: 600px) {
+    .service-text {
         display: flex;
         flex-direction: column;
-        align-items: start;
-        gap: 20px;
-        width: 40%;
-
-        h1 {
-            font-size: 25px;
-
+        max-width: 100%;
+        justify-content: space-between;
+        gap: 30px;
+    
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            width: 100%;
+    
+            h1 {
+                font-size: 25px;
+    
+            }
+    
+            h3 {
+    
+                color: #848404;
+            }
         }
-
-        h3 {
-
-            color: #848404;
+    
+        p {
+            width: 100%;
+            font-size: 20px;
+            text-align: justify;
         }
-    }
-
-    p {
-        padding: 20px 0px 20px 50px;
-        border-left: 2px solid black;
-        width: 55%;
-        font-size: 20px;
-        text-align: justify;
-    }
+    }    
 }
+
 
 #service1 {
     padding: 100px 5%;
@@ -637,7 +675,12 @@ a {
 
         .adv {
             position: relative;
-            width: 350px;
+            @media (min-width: 600px) {
+                width: 350px;
+            }
+            @media (max-width: 600px) {
+                width: 100%;
+            }
             height: 150px;
             display: flex;
             flex-direction: column;
@@ -694,7 +737,12 @@ a {
 
 #service4 {
     position: relative;
-    padding: 100px 5%;
+    @media (min-width: 600px) {
+        padding: 100px 5%;
+    }
+    @media (max-width: 600px) {
+        padding: 100px 20px;
+    }
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -741,6 +789,21 @@ a {
         .back-img {
             width: 100% !important;
             right: 0% !important;
+        }
+    }
+    @media (max-width: 600px) {
+        .text {
+            max-width: 100% !important;
+        }
+
+        .advantages {
+            width: 100% !important;
+
+            .advs {
+                padding: 20px;
+                border-radius: 10px;
+                background-color: white;
+            }
         }
     }
 
@@ -835,7 +898,6 @@ a {
     border-radius: 15px;
     border: 4px solid black;
     width: 90%;
-    min-height: 720px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -844,7 +906,8 @@ a {
     @media (min-width: 850px) {
         align-items: start;
 
-        .faqs, .answers {
+        .faqs,
+        .answers {
             width: 48%;
         }
 
@@ -862,7 +925,8 @@ a {
         align-items: center;
         gap: 50px;
 
-        .faqs, .answers {
+        .faqs,
+        .answers {
             width: 100%;
         }
 
@@ -874,7 +938,7 @@ a {
         }
 
         .answer-box {
-            min-height: 350px;
+            min-height: 500px;
         }
     }
 
@@ -896,6 +960,7 @@ a {
         align-items: start;
         justify-content: start;
         gap: 30px;
+        height: 100%;
     }
 
     .questions-list {
@@ -914,7 +979,6 @@ a {
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            min-height: 90px;
             padding: 20px;
             border-radius: 10px;
             background-color: #0c513f15;
@@ -962,7 +1026,7 @@ a {
             object-position: center;
         }
 
-        .answer{
+        .answer {
             position: relative;
             width: 100%;
 
@@ -974,6 +1038,10 @@ a {
                 height: 100%;
                 opacity: 0;
                 transition: all 1s ease;
+
+                @media (max-width: 400px) {
+                    font-size: 20px !important;
+                }
             }
 
             p.active {
@@ -1001,7 +1069,8 @@ a {
     h2,
     h5,
     a {
-        width: 60%;
+        width: 100%;
+        max-width: 800px;
         text-align: center;
     }
 

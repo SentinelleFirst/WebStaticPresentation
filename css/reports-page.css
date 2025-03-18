@@ -5,7 +5,7 @@
     position: relative;
     color: white;
     display: flex;
-    align-items: end;
+    align-items: center;
 
     .divider {
         width: 50%;
@@ -36,7 +36,8 @@
 
         h1 {
             font-size: 48px;
-            
+            color: #FFC501;
+            font-weight: bold;
         }
 
         h3 {

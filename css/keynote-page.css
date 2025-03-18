@@ -77,7 +77,7 @@
     color: white;
 
     .hero-intro {
-        padding: 50px 15%;
+        padding: 50px 10%;
         max-width: 1400px;
         display: flex;
         flex-direction: column;
@@ -85,7 +85,9 @@
         animation: fadeInLeft 1s forwards;
 
         h1 {
-            font-size: 60px;
+            font-size: 40px;
+            color: #FFC501;
+            font-weight: bold;
         }
 
         p {
@@ -107,7 +109,12 @@
     transform: translate(-50%, -40%);
     /* Centre la vidéo */
     object-fit: cover;
-    object-position: right;
+    @media (min-width: 1000px) {
+        object-position: right;
+    }
+    @media (max-width: 1000px) {
+        object-position: 80% center;
+    }
     /* Assure que la vidéo couvre bien tout le fond */
     filter: brightness(0.5);
 }
@@ -491,12 +498,12 @@
 
             .yellow-cercle {
                 position: absolute;
-                width: 300px;
-                height: 300px;
+                width: 250px;
+                height: 250px;
                 border-radius: 50%;
                 background-color: #FACB01;
-                bottom: -150px;
-                right: -150px;
+                bottom: -125px;
+                right: -125px;
             }
 
             .text {

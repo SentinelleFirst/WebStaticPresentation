@@ -5,7 +5,7 @@
     position: relative;
     color: white;
     display: flex;
-    align-items: end;
+    align-items: center;
 
     .divider {
         width: 50%;
@@ -27,7 +27,6 @@
         position: absolute;
         max-width: 800px;
         margin: 0 5%;
-        min-height: 600px;
         display: flex;
         flex-direction: column;
         padding-top: 100px;
@@ -36,7 +35,8 @@
 
         h1 {
             font-size: 48px;
-            
+            color: #FFC501;
+            font-weight: bold;
         }
 
         h3 {
@@ -108,10 +108,10 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 
     .btn {
-        height: 50px;
+        padding: 10px;
         width: 200px;
         border-radius: 25px;
     }

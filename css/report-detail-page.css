@@ -13,10 +13,15 @@
 }
 
 .report-content{
-    margin: -350px 5% 50px 5%;
     display: flex;
     justify-content: center;
     align-items: start;
+    @media (min-width: 500px) {
+        margin: -350px 5% 50px 5%;
+    }
+    @media (max-width: 500px) {
+        margin: -500px 0 50px 0;
+    }
 }
 
 #report-details{

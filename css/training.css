@@ -85,7 +85,7 @@
     }
 
     .hero-intro {
-        max-width: 60%;
+        max-width: 800px;
         margin: 200px 5% 0 5%;
         display: flex;
         flex-direction: column;
@@ -94,11 +94,12 @@
 
         h3 {
             font-size: 36px;
-
+            color: #FFC501;
+            font-weight: bold;
         }
 
         h1 {
-            font-size: 48px;
+            font-size: 35px;
 
         }
 
@@ -113,10 +114,22 @@
 #training1 {
     width: 100%;
     display: flex;
+    gap: 30px;
     padding: 100px 5% 50px 5%;
     justify-content: space-between;
     align-items: center;
     position: relative;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+
+        .text,
+        .advantages {
+            min-width: 100% !important;
+            width: 100% !important;
+        }
+
+    }
 
     .divider {
         min-width: 350px;
@@ -146,16 +159,38 @@
         }
     }
 
-    .glob {
-        z-index: -2;
-        position: absolute;
-        object-fit: cover;
-        object-position: center;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        top: 100px;
-        right: 5%;
+    @media (min-width: 750px) {
+        .glob {
+            z-index: -2;
+            position: absolute;
+            object-fit: cover;
+            object-position: center;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            top: 100px;
+            right: 5%;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .glob {
+            z-index: -2;
+            position: absolute;
+            object-fit: cover;
+            object-position: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            bottom: 200px;
+            right: 5%;
+        }
+    }
+
+    @media (max-width: 470px) {
+        .glob {
+            display: none;
+        }
     }
 
     .advantages {
@@ -188,21 +223,51 @@
     justify-content: space-between;
     gap: 50px;
 
-    .text {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    @media (min-width: 550px) {
+        .text {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
 
-        h1 {
-            max-width: 500px;
-            width: 60%;
+            h1 {
+                max-width: 500px;
+                width: 60%;
+            }
+
+            p {
+                font-size: 20px;
+                padding-left: 50px;
+                border-left: 5px solid black;
+                width: 50%;
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-between;
+
+            h1 {
+                width: 100%;
+            }
+
+            p {
+                font-size: 20px;
+                width: 100%;
+            }
         }
 
-        p {
-            font-size: 20px;
-            padding-left: 50px;
-            border-left: 5px solid black;
-            width: 50%;
+        .divider {
+            width: 250px;
+            width: 70%;
+            height: 6px;
+            background-color: black;
+            border-radius: 2px;
         }
     }
 
@@ -278,8 +343,12 @@
     align-items: center;
     position: relative;
 
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
+
     .divider {
-        min-width: 350px;
+        min-width: 250px;
         width: 70%;
         height: 6px;
         background-color: black;
@@ -287,7 +356,15 @@
     }
 
     .text {
-        max-width: 700px;
+
+        @media (min-width: 700px) {
+            max-width: 70%;
+        }
+
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -298,45 +375,99 @@
     }
 
     .paragraphe {
-        width: calc(100% - 500px);
-        width: 500px;
-        height: 500px;
-        position: relative;
+        @media (min-width: 700px) {
+            width: calc(100% - 500px);
+            width: 500px;
+            height: 500px;
 
-        .training3-img {
-            z-index: -1;
-            position: absolute;
-            object-fit: contain;
-            object-position: right;
-            filter: brightness(0.7);
+            .training3-img2 {
+                display: none;
+            }
+
+            .training3-img {
+                z-index: -1;
+                position: absolute;
+                object-fit: contain;
+                object-position: right;
+                filter: brightness(0.7);
+                width: 100%;
+                height: 100%;
+            }
+
+            .argument1 {
+                top: 2%;
+                right: 80%;
+            }
+
+            .argument2 {
+                top: 10%;
+                right: 0%;
+            }
+
+            .argument3 {
+                top: 40%;
+                right: 40%;
+            }
+
+            .argument4 {
+                bottom: 10%;
+                right: 25%;
+            }
+
+            .argument5 {
+                bottom: 5%;
+                right: 100%;
+            }
+        }
+
+        @media (max-width: 700px) {
             width: 100%;
-            height: 100%;
+            height: 400px;
+
+            .training3-img2 {
+                z-index: -1;
+                position: absolute;
+                object-fit: cover;
+                object-position: center;
+                overflow: hidden;
+                filter: brightness(0.7);
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+
+            .training3-img {
+                display: none;
+            }
+
+            .argument1 {
+                top: 0%;
+                left: 0%;
+            }
+
+            .argument2 {
+                top: 0%;
+                right: 0%;
+            }
+
+            .argument3 {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .argument4 {
+                bottom: 0%;
+                right: 0%;
+            }
+
+            .argument5 {
+                bottom: 0%;
+                left: 0%;
+            }
         }
 
-        .argument1 {
-            top: 2%;
-            left: 20%;
-        }
-
-        .argument2 {
-            top: 10%;
-            right: 0%;
-        }
-
-        .argument3 {
-            top: 40%;
-            right: 40%;
-        }
-
-        .argument4 {
-            bottom: 10%;
-            right: 25%;
-        }
-
-        .argument5 {
-            bottom: 5%;
-            left: 00%;
-        }
+        position: relative;
 
         .argument {
             box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.445);
@@ -368,6 +499,7 @@
         }
 
         .argument:hover {
+            z-index: 6;
             display: flex;
             width: 300px;
             height: 120px;
@@ -397,32 +529,65 @@
 
 #training4 {
     width: 100%;
-    display: flex;
+    flex-direction: column;
     padding: 50px 5%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    gap: 40px;
 
-    .divider {
-        min-width: 350px;
-        width: 70%;
-        height: 6px;
-        background-color: black;
-        border-radius: 3px;
+    @media (min-width: 700px) {
+        .text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            h1 {
+                width: 55%;
+            }
+
+            p {
+                font-size: 20px;
+                padding-left: 50px;
+                border-left: 5px solid black;
+                width: 45%;
+            }
+        }
     }
 
-    .text {
-        width: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 30px;
-        text-align: end;
+    @media (max-width: 700px) {
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
 
+            h1 {
+                width: 100%;
+            }
 
-        p {
-            font-size: 20px;
+            p {
+                font-size: 20px;
+                width: 100%;
+            }
         }
+
+        .divider {
+            min-width: 250px;
+            width: 70%;
+            height: 6px;
+            background-color: black;
+            border-radius: 3px;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .paragraphe {
             display: flex;
@@ -471,21 +636,41 @@
     }
 }
 
-#training4-video-1 {
-    margin-top: 20%;
-    width: 40%;
-    height: 80%;
-    /* Centre la vidéo */
-    object-fit: cover;
-    border-radius: 10px;
+@media (min-width: 1000px) {
+    #training4-video-1 {
+        margin-top: 20%;
+        width: 40%;
+        height: 80%;
+        /* Centre la vidéo */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #training4-video-2 {
+        width: 40%;
+        height: 80%;
+        /* Centre la vidéo */
+        object-fit: cover;
+        border-radius: 10px;
+    }
 }
 
-#training4-video-2 {
-    width: 40%;
-    height: 80%;
-    /* Centre la vidéo */
-    object-fit: cover;
-    border-radius: 10px;
+@media (max-width: 1000px) {
+    #training4-video-1 {
+        display: none;
+    }
+
+    #training4-video-2 {
+        @media (max-width: 1000px) {
+            display: none;
+        }
+
+        width: 100%;
+        height: 100%;
+        /* Centre la vidéo */
+        object-fit: cover;
+        border-radius: 10px;
+    }
 }
 
 .why-us {
@@ -498,21 +683,50 @@
     justify-content: space-between;
     gap: 50px;
 
-    .text {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    @media (min-width: 700px) {
+        .text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
 
-        h1 {
-            max-width: 320px;
-            width: 40%;
+            h1 {
+                width: 55%;
+            }
+
+            p {
+                font-size: 20px;
+                padding-left: 50px;
+                border-left: 5px solid black;
+                width: 45%;
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+
+            h1 {
+                width: 100%;
+            }
+
+            p {
+                font-size: 20px;
+                width: 100%;
+            }
         }
 
-        p {
-            font-size: 20px;
-            padding-left: 50px;
-            border-left: 5px solid black;
-            width: 60%;
+        .divider {
+            min-width: 250px;
+            width: 70%;
+            height: 6px;
+            background-color: black;
+            border-radius: 3px;
         }
     }
 
@@ -563,7 +777,6 @@
     border-radius: 15px;
     border: 4px solid black;
     width: 90%;
-    min-height: 720px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -572,7 +785,8 @@
     @media (min-width: 850px) {
         align-items: start;
 
-        .faqs, .answers {
+        .faqs,
+        .answers {
             width: 48%;
         }
 
@@ -590,7 +804,8 @@
         align-items: center;
         gap: 50px;
 
-        .faqs, .answers {
+        .faqs,
+        .answers {
             width: 100%;
         }
 
@@ -602,7 +817,7 @@
         }
 
         .answer-box {
-            min-height: 350px;
+            min-height: 500px;
         }
     }
 
@@ -624,6 +839,7 @@
         align-items: start;
         justify-content: start;
         gap: 30px;
+        height: 100%;
     }
 
     .questions-list {
@@ -642,7 +858,6 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            min-height: 90px;
             padding: 20px;
             border-radius: 10px;
             background-color: #0c513f15;
@@ -690,7 +905,7 @@
             object-position: center;
         }
 
-        .answer{
+        .answer {
             position: relative;
             width: 100%;
 
@@ -702,6 +917,10 @@
                 height: 100%;
                 opacity: 0;
                 transition: all 1s ease;
+
+                @media (max-width: 400px) {
+                    font-size: 20px !important;
+                }
             }
 
             p.active {
@@ -729,7 +948,8 @@
     h2,
     h5,
     a {
-        width: 60%;
+        width: 100%;
+        max-width: 800px;
         text-align: center;
     }
 
@@ -748,7 +968,6 @@
 
 .visible {
     opacity: 1;
-    /* Rendre l'élément visible */
 }
 
 a {

@@ -9,7 +9,7 @@ main {
     position: relative;
     color: white;
     display: flex;
-    align-items: end;
+    align-items: center;
 
     .divider {
         width: 50%;
@@ -40,7 +40,8 @@ main {
 
         h1 {
             font-size: 48px;
-            
+            color: #FFC501;
+            font-weight: bold;
         }
 
         h3 {
@@ -72,6 +73,12 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 400px) {
+        input {
+            width: 150px;
+        }
+    }
 
     input {
         height: 50px;
@@ -199,14 +206,22 @@ main {
 
 
     .dialog-content {
-        padding: 60px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         gap: 30px;
         text-align: justify;
 
-        p {
-            font-size: 18px;
+        @media (min-width: 400px) {
+            p {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            p {
+                font-size: 15px;
+            }
         }
     }
 
@@ -451,6 +466,12 @@ main {
     iframe {
         height: 700px;
         margin-bottom: 30px;
+        @media (max-width: 1000px) {
+            width: 50%;
+        }
+        @media (max-width: 700px) {
+            width: 100%;
+        }
     }
 }
 
@@ -458,15 +479,10 @@ main {
     iframe {
         height: 315px;
         margin-bottom: 30px;
+        @media (max-width: 700px) {
+            width: 100%;
+        }
     }
-}
-
-.posts-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    text-align: justify;
 }
 
 .twitter-section {
@@ -482,7 +498,21 @@ main {
 .twitter-section.open {
     .twitter-container {
         height: auto;
+        @media (max-width: 1000px) {
+            width: 50%;
+        }
+        @media (max-width: 700px) {
+            width: 100%;
+        }
     }
+}
+
+.posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    text-align: justify;
 }
 
 
@@ -493,6 +523,7 @@ main {
     flex-direction: column;
     align-items: start;
     padding: 50px 5%;
+    gap: 30px;
 
     h3 {
         

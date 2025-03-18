@@ -27,7 +27,7 @@
     <header>
         <div class="menu">
             <div class="menu-left">
-                <a href="index.html"><img alt="" src="images/logo_long_blanc.svg" class="menu-logo" /></a>
+                <a href="index.html"><img alt="" src="images/logo_long_blanc.webp" class="menu-logo" /></a>
                 <a href="index.html"><img alt="" src="images/favicon.svg" class="menu-logo-mobile" /></a>
                 <div class="menu-link" id="menu-link">
                     <div class="options">
@@ -73,13 +73,6 @@
                     <div class="menu-global">
                         <a data-translate-key="header-contact-us" href="contact.html"><img
                                 src="images/footer-icon-phone.svg" alt="">Contact us</a>
-                        <div class="lang-btn">
-
-                            <select id="mobilLangDropdown" title="Choose a language">
-                                <option class="option" value="en">Global - EN</option>
-                                <option class="option" value="fr">Global - FR</option>
-                            </select>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -87,15 +80,8 @@
             <div class="menu-end">
                 <div class="menu-global">
                     <a data-translate-key="header-contact-us" href="contact.html">Contact us</a>
-                    <select id="desktopLangDropdown" title="Choose a language">
-                        <option class="option" value="en">Global - EN</option>
-                        <option class="option" value="fr">Global - FR</option>
-                    </select>
                 </div>
-                <div class="menu-button">
-                    <img id="menu-search-icon" src="images/menu-search-icon.svg" alt="">
-                    <img id="menu-open" src="images/menu-icon.svg" alt="">
-                </div>
+                <img id="menu-open" src="images/menu-icon.svg" alt="">
             </div>
         </div>
     </header>
@@ -288,6 +274,7 @@
         </section>
         <section class="our-clients">
             <h1 data-translate-key="index-our-client-title">They trust us</h1>
+            <div class="divider"></div>
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide">
@@ -326,7 +313,7 @@
         <button id="scrollToTopBtn" title="Go to top">↑</button>
         <footer>
             <div class="footer-logo">
-                <img src="images/logo_long_blanc.svg" alt="Logo">
+                <img src="images/logo_long_blanc.webp" alt="Logo">
             </div>
 
             <div class="footer-permalinks">
@@ -576,19 +563,19 @@
             {
                 firstElement.innerHTML = `
                 <img src="${articles[0].imageUrl}">
-                            <div class="blog-article-title">
-                                <h4 class="langue-en">${articles[0].title}</h4>
-                                <h4 class="langue-fr">${articles[0].titleFR}</h4>
-                                <p>${new Date(articles[0].date.seconds * 1000).toLocaleString()}</p>
-                            </div>
-                            <div class="blog-article-info">
-                                <p class="langue-en">${articles[0].subtitle}</p>
-                                <p class="langue-fr">${articles[0].subtitleFR}</p>
-                                <a class="langue-en" href="report-preview.html?id=${articles[0].id}">Read more<img src="images/right-arrow-yellow.svg" alt=""
-                                class="arrow-icon"></a>
-                                <a class="langue-fr" href="report-preview.html?id=${articles[0].id}">Voir plus<img src="images/right-arrow-yellow.svg" alt=""
-                                class="arrow-icon"></a>
-                            </div>
+                <div class="blog-article-title">
+                    <h4 class="langue-en">${articles[0].title}</h4>
+                    <h4 class="langue-fr">${articles[0].titleFR}</h4>
+                    <p>${new Date(articles[0].date.seconds * 1000).toLocaleString()}</p>
+                </div>
+                <div class="blog-article-info">
+                    <p class="langue-en">${articles[0].subtitle}</p>
+                    <p class="langue-fr">${articles[0].subtitleFR}</p>
+                    <a class="langue-en" href="report-preview.html?id=${articles[0].id}">Read more<img src="images/right-arrow-yellow.svg" alt=""
+                    class="arrow-icon"></a>
+                    <a class="langue-fr" href="report-preview.html?id=${articles[0].id}">Voir plus<img src="images/right-arrow-yellow.svg" alt=""
+                    class="arrow-icon"></a>
+                </div>
             `;
             } else {
                 firstElement.innerHTML = `

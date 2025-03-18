@@ -47,21 +47,21 @@ document.addEventListener('DOMContentLoaded', async function () {
         var titlesFr = document.querySelectorAll('.langue-fr');
         var titlesEn = document.querySelectorAll('.langue-en');
 
-        if (selectedValue === 'fr') {
+        /*if (selectedValue === 'fr') {
             titlesFr.forEach(function (title) {
                 title.style.display = 'block';
             });
             titlesEn.forEach(function (title) {
                 title.style.display = 'none';
             });
-        } else {
+        } else {*/
             titlesFr.forEach(function (title) {
                 title.style.display = 'none';
             });
             titlesEn.forEach(function (title) {
                 title.style.display = 'block';
             });
-        }
+        //}
 
         /**
          * Fait appel à ta fonction applyTranslations(lang) ici pour que le changement se fasse au moment

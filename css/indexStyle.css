@@ -58,10 +58,14 @@
     }
 
     a {
+        margin-top: 20px;
         text-decoration: none;
         font-size: 20px;
-        
-        color: white;
+        background-color: white;
+        border-radius: 5px;
+        width: 200px;
+        color: black;
+        padding: 10px 20px;
         transition: all 0.3s ease;
 
         .arrow-icon {
@@ -76,7 +80,8 @@
     }
 
     a:hover {
-        color: #FACB01;
+        background-color: black;
+        color: white;
         .arrow-icon {
             width: 30px !important;
         }
@@ -315,8 +320,12 @@
         }
 
         h4 {
-            
             max-width: 60%;
+            font-weight: bold;
+        }
+
+        .blog-article-title P {
+            font-size: 15px;
         }
 
         P {
@@ -326,7 +335,7 @@
         .blog-article-title {
             display: flex;
             justify-content: start;
-            align-items: end;
+            align-items: start;
             gap: 30px;
         }
 
@@ -428,9 +437,17 @@
             display: flex;
             justify-content: start;
             align-items: end;
+            @media (max-width: 450px) {
+                flex-direction: column;
+            }
 
             .link {
-                width: 50%;
+                @media (min-width: 450px) {
+                    width: 50%;
+                }
+                @media (max-width: 450px) {
+                    width: 100%;
+                }
                 height: 220px;
                 padding: 30px;
                 display: flex;
@@ -720,8 +737,14 @@
             height: 800px;
 
             a {
-                width: 50% !important;
-                height: 400px !important;
+                @media (min-width: 400px){
+                    width: 50% !important;
+                    height: 400px !important;
+                }
+                @media (max-width: 400px){
+                    width: 100% !important;
+                    height: 200px !important;
+                }
             }
 
         }
@@ -850,10 +873,40 @@
 
         .team-imgs {
             position: absolute;
-            gap: 100px !important;
-            width: 100%;
+            gap: 50px !important;
+            width: 100% !important;
             z-index: -1;
             opacity: 0.8;
+
+            .column1, .column2{
+                width: 40% !important;
+            }
+
+            
+
+        @media (max-width: 600px) {
+
+            .column1 .img1 {
+                width: 100%;
+                height: 270px;
+            }
+    
+            .column1 .img2 {
+                width: 100%;
+                height: 270px;
+            }
+    
+            .column2 .img1 {
+                width: 100%;
+                height: 270px;
+            }
+    
+            .column2 .img2 {
+                width: 100%;
+                height: 270px;
+            }
+            
+        }
         }
 
         .text {
@@ -910,24 +963,28 @@
             align-items: start;
         }
 
-        .column1 .img1 {
-            width: 280px;
-            height: 180px;
-        }
+        @media (min-width: 600px) {
 
-        .column1 .img2 {
-            width: 210px;
-            height: 266px;
-        }
-
-        .column2 .img1 {
-            width: 200px;
-            height: 270px;
-        }
-
-        .column2 .img2 {
-            width: 213px;
-            height: 235px;
+            .column1 .img1 {
+                width: 280px;
+                height: 180px;
+            }
+    
+            .column1 .img2 {
+                width: 210px;
+                height: 266px;
+            }
+    
+            .column2 .img1 {
+                width: 200px;
+                height: 270px;
+            }
+    
+            .column2 .img2 {
+                width: 213px;
+                height: 235px;
+            }
+            
         }
     }
 
@@ -1048,7 +1105,12 @@
     align-items: center;
     margin: 50px 5%;
 
-
+    .divider {
+        width: 150px;
+        background-color: #FACB01;
+        height: 6px;
+        border-radius: 3px;
+    }
 
     .slider {
         background: white;
