@@ -1,5 +1,7 @@
 footer {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     justify-content: end;
@@ -8,7 +10,9 @@ footer {
 
 .footer-logo {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
 
     @media (max-width: 1200px) {
@@ -35,7 +39,9 @@ footer {
 
 .footer-permalinks {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     color: white;
@@ -55,8 +61,11 @@ footer {
 }
 
 .footer-permalinks .permalinks {
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     align-items: end;
     justify-content: center;
     gap: 20px;
@@ -80,7 +89,9 @@ footer {
 
 .footer-content {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     gap: 50px;
 
@@ -103,7 +114,9 @@ footer {
 }
 
 .footer-left {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
@@ -124,14 +137,18 @@ footer {
     font-size: 20px;
 }
 .footer-left .newsletter-fil {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     gap: 15px;
 }
 
 .footer-left .newsletter-fil .form {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     gap: 10px;
 }
 
@@ -141,7 +158,9 @@ footer {
 }
 
 .footer-right {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     gap: 120px;
@@ -160,14 +179,18 @@ footer {
 }
 
 .footer-right .list-info {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
 }
 
 .footer-right .list-info .info {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -196,7 +219,9 @@ footer {
 
 .copyright {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     background-color: #FACB01;
     padding: 10px 5%;
@@ -214,7 +239,9 @@ footer {
 
 .copyright h6 {
     height: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: start;
     align-items: center;
     font-style: italic;
@@ -226,7 +253,9 @@ footer {
 }
 
 .copyright .socials {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: end;
     align-items: center;
     gap: 30px;

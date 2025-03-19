@@ -4,7 +4,9 @@
     height: 800px;
     margin: auto;
     position: relative;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: var(--lx-gap);
 }
@@ -99,7 +101,9 @@
 }
 
 #dots {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: start;
     gap: 10px;
@@ -125,7 +129,9 @@
 
 .dot {
     cursor: pointer;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: start;
     justify-content: start;
     gap: 10px;
@@ -155,7 +161,9 @@
 }
 
 .blog {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-around;
     padding: 50px 5%;
@@ -163,7 +171,9 @@
 
 .blog .blog-title {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
@@ -184,7 +194,9 @@
 }
 
 .blog .articles {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     width: 100%;
     min-height: 500px;
     margin-top: 50px;
@@ -204,7 +216,9 @@
 }
 
 .blog .first-blog-box {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-around;
     align-items: start;
 
@@ -218,7 +232,9 @@
 }
 
 .blog .blog-boxs {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-around;
     gap: 20px;
 }
@@ -233,13 +249,16 @@
 @media (max-width: 800px) {
     .blog .blog-boxs {
         width: 100%;
-        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
         flex-basis: auto;
     }
 }
 
 .blog .blog-article {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-basis: auto;
     justify-content: start;
     align-items: start;
@@ -271,7 +290,9 @@
 
 .blog .blog-article .blog-article-title {
     width: 60%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
@@ -301,7 +322,9 @@
 .blog .first-article {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
@@ -330,7 +353,9 @@
 }
 
 .blog .first-article .blog-article-title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: start;
     align-items: start;
     gap: 30px;
@@ -380,7 +405,9 @@
 }
 
 .what-we-do {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     width: 100%;
     padding: 50px 5%;
     justify-content: space-between;
@@ -398,7 +425,9 @@
 
 .what-we-do .text {
     width: 68%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
@@ -406,7 +435,9 @@
 }
 
 .what-we-do .text .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
@@ -425,7 +456,9 @@
 }
 
 .what-we-do .text .links {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: start;
     align-items: end;
 
@@ -445,7 +478,9 @@
 
     height: 220px;
     padding: 30px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
@@ -541,7 +576,9 @@
 
 .services {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     padding: 50px 5%;
     justify-content: center;
@@ -551,13 +588,17 @@
 
 .services .text {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
 }
 
 .services .text .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -591,8 +632,11 @@
 }
 
 .services .service-options {
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -602,7 +646,9 @@
 .services .service-options .option {
     width: 24%;
     height: 300px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: end;
     align-items: center;
@@ -625,7 +671,9 @@
     margin-bottom: 10px;
     color: white;
     padding: 10px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
@@ -635,7 +683,9 @@
 }
 
 .services .service-options .option .description {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
@@ -737,13 +787,17 @@
 
 .training {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     padding: 50px 5%;
 }
 
 .training .text {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -777,7 +831,9 @@
 }
 
 .training .training-options {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: center;
     align-items: end;
     width: 50%;
@@ -785,7 +841,9 @@
 
 .training .training-options a {
     text-decoration: none;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -805,7 +863,9 @@
 }
 
 .training .training-options a .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -899,7 +959,9 @@
     overflow: hidden;
     width: 100%;
     min-height: 600px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-around;
     align-items: center;
     padding: 50px 5%;
@@ -907,7 +969,9 @@
 
 .our-team .team-imgs {
     width: 40%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -915,7 +979,9 @@
 
 .our-team .team-imgs .column1,
 .our-team .team-imgs .column2 {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
     gap: 20px;
@@ -963,7 +1029,9 @@
 }
 
 .our-team .text {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
     align-items: end;
@@ -1001,7 +1069,9 @@
     position: relative;
     width: 200px;
     height: 50px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: center;
     align-items: center;
 }
@@ -1071,7 +1141,9 @@
 }
 
 .our-clients {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     margin: 50px 5%;
@@ -1116,7 +1188,9 @@
 
 .our-clients .slider .slide-track {
     animation: scroll 40s linear infinite;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     width: calc(250px * 10);
 }
 
@@ -1155,6 +1229,8 @@ white-gradient {
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     }
 }

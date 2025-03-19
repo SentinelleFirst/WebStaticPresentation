@@ -3,7 +3,9 @@
     width: 100%;
     min-height: 800px;
     overflow: hidden;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: end;
     justify-content: center;
     position: relative;
@@ -31,7 +33,9 @@
 .hero .hero-intro {
     padding: 0px 5%;
     width: 48%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     margin: 200px 0px 10px 0px;
     animation: fadeInLeft 1s forwards;
@@ -55,7 +59,9 @@
     height: 100%;
     margin-bottom: 200px;
     position: relative;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-around;
     align-items: center;
     animation: fadeInRight 1s forwards;
@@ -102,7 +108,9 @@ a h6 {
 
 .vision-and-mission {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -155,14 +163,18 @@ a h6 {
 
 .vision-and-mission .vision,
 .vision-and-mission .mission {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
 }
 
 .vision-and-mission .vision .title,
 .vision-and-mission .mission .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     gap: 20px;
     align-items: end;
 }
@@ -179,7 +191,9 @@ a h6 {
 .vision-and-mission .vision .text,
 .vision-and-mission .mission .text {
     width: 55%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
 }
@@ -207,7 +221,9 @@ a h6 {
 }
 
 .team {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
     padding: 50px 5%;
@@ -216,7 +232,9 @@ a h6 {
 
 @media (min-width: 600px) {
     .team .text {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         gap: 30px;
         align-items: center;
         width: 100%;
@@ -239,7 +257,9 @@ a h6 {
     }
 
     .team .text .titles {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         flex-direction: column;
         align-items: start;
         gap: 20px;
@@ -247,7 +267,9 @@ a h6 {
     }
 
     .team .text .title1 {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         justify-content: start;
         align-items: end;
         gap: 20px;
@@ -256,7 +278,9 @@ a h6 {
 
 @media (max-width: 600px) {
     .team .text {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         align-items: center;
         flex-direction: column;
         width: 100%;
@@ -277,7 +301,9 @@ a h6 {
     }
 
     .team .text .titles {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         flex-direction: column;
         align-items: start;
         gap: 20px;
@@ -285,7 +311,9 @@ a h6 {
     }
 
     .team .text .title1 {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         justify-content: start;
         align-items: end;
         gap: 20px;
@@ -305,9 +333,12 @@ a h6 {
 }
 
 .team .team-boxs-list {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     position: relative;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     justify-content: space-around;
     width: 100%;
     min-height: 600px;
@@ -315,7 +346,9 @@ a h6 {
 }
 
 .team .team-boxs {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     border-radius: 10px;
     border: 2px solid black;
@@ -372,7 +405,9 @@ a h6 {
 
 @media (max-width: 720px) {
     .team .team-boxs.active .team-info {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         flex-direction: column;
         justify-content: center;
         align-items: start;
@@ -406,7 +441,9 @@ a h6 {
     }
 
     .team .team-boxs.active .team-info .team-socials {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         align-items: center;
         gap: 20px;
     }
@@ -436,7 +473,9 @@ a h6 {
 @media (min-width: 720px) {
     .team .team-boxs.active .team-info {
         position: absolute;
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         flex-direction: column;
         justify-content: center;
         align-items: start;
@@ -465,7 +504,9 @@ a h6 {
     }
 
     .team .team-boxs.active .team-info .team-socials {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         align-items: center;
         gap: 20px;
     }
@@ -523,14 +564,18 @@ a h6 {
 }
 
 .team .caption div {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     gap: 15px;
 }
 
 .clients {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     padding: 0px 5% 100px 5%;
     align-items: start;
@@ -578,7 +623,9 @@ a h6 {
 
 .clients .text {
     width: 50%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
@@ -586,7 +633,9 @@ a h6 {
 }
 
 .clients .text .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     gap: 20px;
     align-items: end;
 }
@@ -601,14 +650,18 @@ a h6 {
 
 .clients .text .client-info {
     position: relative;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     width: 100%;
 }
 
 .clients .text .paragraphe {
     position: absolute;
     transition: all 1s ease-in-out;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     opacity: 0;
     width: 100%;
     flex-direction: column;
@@ -628,7 +681,9 @@ a h6 {
 }
 
 .clients .clients-logo {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: center;
     align-items: center;
     height: 290px;
@@ -638,7 +693,9 @@ a h6 {
 }
 
 .clients .clients-logo .logo-box {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -687,7 +744,9 @@ a h6 {
 }
 
 .clients .views {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: end;
     justify-content: center;

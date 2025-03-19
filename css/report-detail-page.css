@@ -13,7 +13,9 @@
 }
 
 .report-content{
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: center;
     align-items: start;
     @media (min-width: 500px) {
@@ -25,7 +27,9 @@
 }
 
 #report-details{
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -38,7 +42,9 @@
 
 .report-category {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
@@ -69,7 +75,9 @@ h4{
 
 .report-preview {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
 }
@@ -96,8 +104,11 @@ h4{
 .action-button {
     background-color: white;
     text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -121,7 +132,9 @@ h4{
     text-decoration: none;
     color: black;
     height: 50px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     gap: 20px;
 }
@@ -133,7 +146,9 @@ h4{
 .action-button a div {
     height: 100%;
     flex-grow: 1;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: space-around;

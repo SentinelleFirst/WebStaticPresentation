@@ -36,7 +36,9 @@ label {
 /* Conteneur global */
 body {
     background-color: #F5F5F5;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     height: 100vh;
     /* Prend toute la hauteur de la fenêtre */
 }
@@ -52,7 +54,9 @@ body {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     overflow-x: hidden;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     
@@ -62,7 +66,9 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 15px;
 }
@@ -71,7 +77,9 @@ body {
     color: black;
     text-decoration: none;
     font-size: 16px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     padding: 10px;
     border-radius: 4px;
@@ -91,7 +99,9 @@ body {
     text-decoration: none;
     color: black;
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -121,7 +131,9 @@ body {
 
 /* Zone de contenu principal */
 main {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
     flex-grow: 1;

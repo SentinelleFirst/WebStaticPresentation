@@ -9,7 +9,9 @@
 .btn-three h6 {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: center;
     align-items: center;
 }
@@ -69,7 +71,9 @@
     width: 100%;
     min-height: 900px;
     overflow: hidden;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-content: start;
     justify-content: center;
@@ -80,7 +84,9 @@
 .hero .hero-intro {
     padding: 50px 10%;
     max-width: 1400px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     margin-top: 200px;
     animation: fadeInLeft 1s forwards;
@@ -121,7 +127,9 @@
 
 .issaka {
     padding: 50px 5%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 100px;
     width: 100%;
@@ -129,7 +137,9 @@
 }
 
 .issaka .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -174,7 +184,8 @@
 
     .issaka .why-arguments .arguments {
         width: 100%;
-        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     }
 
     .issaka .why-arguments .illustrations {
@@ -188,13 +199,17 @@
 }
 .issaka .why-arguments {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
 }
 
 .issaka .why-arguments .arguments-list {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
@@ -203,14 +218,18 @@
 }
 
 .issaka .why-arguments .arguments-list .arguments {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 15px;
     width: 100%;
 }
 
 .issaka .why-arguments .arguments-list .arguments .arguments-title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     gap: 20px;
     min-height: 30px;
@@ -242,7 +261,9 @@
 
 .issaka .why-arguments .illustrations {
     max-width: 900px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
 }
@@ -293,7 +314,9 @@
 
 .topics-covered {
     padding: 50px 5%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
     width: 100%;
@@ -301,7 +324,9 @@
 }
 
 .topics-covered .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -337,14 +362,18 @@
 
 .topics-covered .all-topics-covered {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
 }
 
 .topics-covered .all-topics-covered .illustrations {
     height: 550px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -354,8 +383,11 @@
 .topics-covered .all-topics-covered .illustrations .images-boxs {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     justify-content: space-between;
     gap: 6%;
 }
@@ -403,14 +435,18 @@
 }
 
 .topics-covered .all-topics-covered .topics-covered-list {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
 }
 
 .topics-covered .all-topics-covered .topics-covered-list .topics-covered {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: row;
     align-items: center;
     gap: 20px;
@@ -422,7 +458,9 @@
 }
 
 .topics-covered .all-topics-covered .topics-covered-list .topics-covered .topics-covered-title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
 }
 
@@ -432,7 +470,9 @@
 
 .key-benefits {
     padding: 50px 5%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
     width: 100%;
@@ -440,7 +480,9 @@
 }
 
 .key-benefits .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -459,8 +501,11 @@
 
 .key-benefits .benefits-list {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     justify-content: center;
     gap: 50px;
 }
@@ -481,7 +526,9 @@
     min-height: 300px;
     background-color: #E8E9EB;
     position: relative;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     justify-content: space-between;
     padding: 40px;
@@ -503,7 +550,9 @@
 .key-benefits .benefits-list .benefits .text {
     width: 70%;
     height: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -516,7 +565,9 @@
 
 .key-benefits .benefits-list .benefits .benefit-right {
     width: 30%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
@@ -536,7 +587,9 @@
 
 .speaker-packages {
     padding: 50px 5%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
     width: 100%;
@@ -544,7 +597,9 @@
 }
 
 .speaker-packages .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -564,8 +619,11 @@
 
 .speaker-packages .packages-list {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     justify-content: center;
     gap: 50px;
 }
@@ -621,7 +679,9 @@
 .speaker-packages .packages-list .packages {
     min-height: 700px;
     padding: 50px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: start;
@@ -649,7 +709,9 @@
 
 .contact-message {
     padding: 50px 5%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
     width: 100%;
@@ -657,7 +719,9 @@
 }
 
 .contact-message .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -735,7 +799,9 @@
 .contact-message .message .caption {
     position: absolute;
     background-color: white;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     align-items: start;

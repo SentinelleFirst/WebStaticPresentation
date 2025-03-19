@@ -8,7 +8,9 @@ main {
     height: 900px;
     position: relative;
     color: white;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
 }
 
@@ -33,7 +35,9 @@ main {
     max-width: 800px;
     margin: 0 5%;
     min-height: 600px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     padding-top: 100px;
     gap: 30px;
@@ -58,7 +62,9 @@ main {
 
 
 .blog-filter {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     margin: 50px 5% 30px 5%;
@@ -70,7 +76,9 @@ main {
     width: 100%;
     background-color: #D9D9D9;
     border-radius: 35px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
 }
@@ -116,7 +124,9 @@ main {
     height: 50px;
     border: none;
     cursor: pointer;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     justify-content: center;
 }
@@ -141,7 +151,9 @@ main {
     }
 
     .other-filter {
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     }
 
 }
@@ -163,7 +175,8 @@ main {
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     border-radius: 10px;
     background-color: white;
     margin-top: 60px;
@@ -183,7 +196,9 @@ main {
 
 .blog {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -198,13 +213,17 @@ main {
 
 #article-content-dialog {
     padding: 30px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
 }
 
 #article-content-dialog .dialog-content {
     padding: 10px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
     text-align: justify;
@@ -224,7 +243,9 @@ main {
 
 #article-content-dialog .links-dialog {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     justify-content: center;
 }
@@ -233,7 +254,9 @@ main {
     text-decoration: none;
     color: black;
     height: 50px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -247,7 +270,9 @@ main {
 #article-content-dialog a div {
     min-height: 50px;
     flex-grow: 1;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
@@ -266,8 +291,11 @@ main {
 }
 
 .article-boxs {
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     align-items: start;
     justify-content: space-between;
 
@@ -275,7 +303,9 @@ main {
 
 .article {
     background-color: white;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     border-radius: 15px;
     width: 45%;
@@ -293,7 +323,9 @@ main {
 }
 
 .article .article-info {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 15px;
     padding: 30px;
@@ -323,7 +355,9 @@ main {
 }
 
 .article .div-category {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     font-weight: 700;
     color: gray;
@@ -360,7 +394,9 @@ main {
 
 .socials-section {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     gap: 30px;
@@ -369,14 +405,18 @@ main {
 
 .socials-section .socials-list {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
 }
 
 .socials-section .socials-post {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     border-bottom: 1px solid black;
     transition: all 1s ease;
@@ -384,7 +424,9 @@ main {
 }
 
 .socials-section .socials-post .title {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     gap: 30px;
     overflow: hidden;
@@ -494,8 +536,11 @@ main {
 }
 
 .posts-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     justify-content: space-between;
     width: 100%;
     text-align: justify;
@@ -505,7 +550,9 @@ main {
 
 .media-code {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     padding: 50px 5%;
@@ -545,7 +592,9 @@ main {
 
 .media-code .code {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
 
     @media (min-height: 760px) {
@@ -582,7 +631,9 @@ main {
 
 .media-code .code .caption {
     background-color: white;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
@@ -606,7 +657,9 @@ main {
 
 .media-code .code .more-info {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: end;
     align-items: center;
 }
@@ -614,7 +667,9 @@ main {
 .media-code .code a {
     text-decoration: none;
     color: black;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     gap: 20px;
     align-items: center;
     padding: 10px 20px;

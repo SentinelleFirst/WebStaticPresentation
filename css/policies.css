@@ -4,7 +4,9 @@
     min-height: 900px;
     position: relative;
     color: white;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-content: start;
     justify-content: center;
@@ -31,7 +33,9 @@
 .hero .hero-intro {
     max-width: 80%;
     margin: 200px 5% 0 5%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     animation: fadeInLeft 1s forwards;
     gap: 30px;
@@ -109,7 +113,9 @@ a h6 {
 #conditions-of-sales ol, 
 #social-media-codes ol, 
 #media-house-rules ol {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     width: 100%;
     align-items: start;

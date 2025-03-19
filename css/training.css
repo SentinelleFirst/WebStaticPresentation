@@ -9,7 +9,9 @@
 .btn-three h6 {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: center;
     align-items: center;
 }
@@ -68,7 +70,9 @@
     min-height: 900px;
     position: relative;
     color: white;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     justify-content: start;
 }
@@ -86,7 +90,9 @@
 .hero .hero-intro {
     max-width: 800px;
     margin: 200px 5% 0 5%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     animation: fadeInLeft 1s forwards;
     gap: 30px;
@@ -111,7 +117,9 @@
 
 #training1 {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     gap: 30px;
     padding: 100px 5% 50px 5%;
     justify-content: space-between;
@@ -144,7 +152,9 @@
     min-width: 320px;
     max-width: calc(40% - 50px);
     margin-right: 20px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
 }
@@ -155,7 +165,9 @@
 }
 
 #training1 .text .paragraphe {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 50px;
 }
@@ -197,14 +209,18 @@
 #training1 .advantages {
     height: 100%;
     width: 55%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     gap: 10px;
 }
 
 #training1 h6 {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     text-align: center;
     padding: 15px 30px;
@@ -217,7 +233,9 @@
 #training2 {
     margin-top: 100px;
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     padding: 50px 5%;
     justify-content: space-between;
@@ -227,7 +245,9 @@
 @media (min-width: 550px) {
     #training2 .text {
         width: 100%;
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         gap: 20px;
         justify-content: space-between;
     }
@@ -248,7 +268,9 @@
 @media (max-width: 550px) {
     #training2 .text {
         width: 100%;
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         flex-direction: column;
         gap: 20px;
         justify-content: space-between;
@@ -298,7 +320,9 @@
 
 #training2 .paragraphe p {
     position: absolute;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     align-items: center;
     padding: 10px 20px;
     border: 4px solid #0C513F;
@@ -337,7 +361,9 @@
 
 #training3 {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     padding: 50px 5%;
     justify-content: space-between;
     align-items: center;
@@ -366,7 +392,9 @@
         width: 100%;
     }
 
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 30px;
 }
@@ -480,7 +508,9 @@
     position: absolute;
     overflow: hidden;
     transition: all 0.5s ease;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -506,7 +536,9 @@
 
 #training3 .paragraphe .argument:hover {
     z-index: 6;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     width: 300px;
     height: 120px;
     border-radius: 10px;
@@ -535,7 +567,9 @@
     width: 100%;
     flex-direction: column;
     padding: 50px 5%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -545,7 +579,9 @@
 @media (min-width: 700px) {
     #training4 .text {
         width: 100%;
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         justify-content: space-between;
         gap: 30px;
     }
@@ -565,7 +601,9 @@
 @media (max-width: 700px) {
     #training4 .text {
         width: 100%;
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
@@ -590,13 +628,17 @@
 }
 
 #training4 .info {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
 }
 
 #training4 .info .paragraphe {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: end;
     gap: 20px;
@@ -604,7 +646,9 @@
 
 #training4 .info .paragraphe .argument {
     font-size: 18px;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     min-height: 50px;
     align-items: center;
     width: 100%;
@@ -634,7 +678,9 @@
 }
 
 #training4 .video_blocs {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     width: calc(100% - 600px);
     height: 100%;
     justify-content: space-around;
@@ -680,7 +726,9 @@
 .why-us {
     margin-top: 100px;
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: center;
     padding: 50px 5%;
@@ -691,7 +739,9 @@
 @media (min-width: 700px) {
     .why-us .text {
         width: 100%;
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         justify-content: space-between;
         gap: 30px;
     }
@@ -711,7 +761,9 @@
 @media (max-width: 700px) {
     .why-us .text {
         width: 100%;
-        display: flex;
+        display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
@@ -736,8 +788,11 @@
 }
 
 .why-us .img_blocs {
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
+    -webkit-flex-wrap: wrap;   /* Préfixe pour Safari */
+    flex-wrap: wrap;           /* Standard moderne */
     justify-content: center;
     gap: 100px;
     width: 100%;
@@ -748,7 +803,9 @@
     width: 350px;
     height: 270px;
     overflow: hidden;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
 }
 
 .why-us .img_blocs p {
@@ -782,7 +839,9 @@
     border: 4px solid black;
     width: 90%;
     overflow: hidden;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     padding: 30px;
 
@@ -837,7 +896,9 @@
 }
 
 .questions .faqs {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: start;
@@ -845,7 +906,9 @@
 }
 
 .questions .answers {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     align-items: start;
     justify-content: start;
@@ -854,7 +917,9 @@
 }
 
 .questions .questions-list {
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     gap: 20px;
     width: 100%;
@@ -866,7 +931,9 @@
 
 .questions .questions-list .question {
     cursor: pointer;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -902,7 +969,9 @@
     width: 100%;
     padding: 20px;
     background-color: #FFC501;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: start;
     align-items: start;
@@ -945,7 +1014,9 @@
 .more-questions {
     min-height: 400px;
     width: 90%;
-    display: flex;
+    display: -webkit-box;      /* Ancien préfixe pour Safari */
+    display: -ms-flexbox;      /* Préfixe pour IE 10 */
+    display: flex;             /* Standard moderne */
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
