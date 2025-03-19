@@ -8,74 +8,74 @@
     justify-content: center;
     position: relative;
     color: white;
+}
 
-    .divider {
-        width: 250px;
-        height: 3px;
-        background-color: white;
-        border-radius: 50%;
-        margin: 30px 0;
+.hero .divider {
+    width: 250px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 30px 0;
+}
+
+@media (max-width: 830px) {
+    .hero .hero-img {
+        display: none !important;
     }
 
-    @media (max-width: 830px) {
-        .hero-img {
-            display: none !important;
-        }
-
-        .hero-intro {
-            width: 100% !important;
-        }
+    .hero .hero-intro {
+        width: 100% !important;
     }
+}
 
-    .hero-intro {
-        padding: 0px 5%;
-        width: 48%;
-        display: flex;
-        flex-direction: column;
-        margin: 200px 0px 10px 0px;
-        animation: fadeInLeft 1s forwards;
+.hero .hero-intro {
+    padding: 0px 5%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0px 10px 0px;
+    animation: fadeInLeft 1s forwards;
+}
 
-        h3 {
-            font-size: 36px;
-            color: #FFC501;
-            font-weight: bold;
-        }
+.hero .hero-intro h3 {
+    font-size: 36px;
+    color: #FFC501;
+    font-weight: bold;
+}
 
-        p {
-            margin-bottom: 30px;
-            font-size: 20px;
-            font-weight: 500;
-            text-align: justify;
-        }
-    }
+.hero .hero-intro p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
 
-    .hero-img {
-        width: 50%;
-        height: 100%;
-        margin-bottom: 200px;
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        animation: fadeInRight 1s forwards;
+.hero .hero-img {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 200px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: fadeInRight 1s forwards;
+}
 
-        img {
-            width: 70%;
-            height: 300px;
-            object-fit: cover;
-            object-position: center;
-        }
+.hero .hero-img img {
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
 
-        .back-scare {
-            z-index: -1;
-            width: 70%;
-            height: 300px;
-            position: absolute;
-            border: 4px solid white;
-            margin-top: 50px;
-            margin-left: 50px;
-        }
-    }
+.hero .hero-img .back-scare {
+    z-index: -1;
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    border: 4px solid white;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 /* Vidéo de fond */
@@ -93,11 +93,11 @@
 
 a {
     text-decoration: none !important;
+}
 
-    h5,
-    h6 {
-        color: black;
-    }
+a h5,
+a h6 {
+    color: black;
 }
 
 .vision-and-mission {
@@ -111,90 +111,99 @@ a {
 
     @media (max-width: 850px) {
         background-color: rgba(235, 255, 198, 0.911);
+    }
+}
 
-        .illustration-wrapper {
-            display: none;
-        }
+@media (max-width: 850px) {
 
-        .mission .text {
-            align-items: start !important;
+    .vision-and-mission .illustration-wrapper {
+        display: none;
+    }
 
-            p {
-                text-align: justify !important;
-                text-align-last: left !important;
-            }
-        }
+    .vision-and-mission .mission .text {
+        align-items: start !important;
 
-        .text {
-            width: 100% !important;
-            text-align: start;
+        .vision-and-mission .mission .text p {
+            text-align: justify !important;
+            text-align-last: left !important;
         }
     }
 
-    .divider {
-        width: 250px;
-        height: 3px;
-        background-color: black;
-        border-radius: 50%;
-        margin: 20px 0;
+    .vision-and-mission .text {
+        width: 100% !important;
+        text-align: start;
     }
+}
 
-    .mission .text {
-        align-items: end;
+.vision-and-mission .divider {
+    width: 250px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 20px 0;
+}
 
-        p {
-            text-align: justify;
-            text-align-last: right;
-        }
+.vision-and-mission .mission .text {
+    align-items: end;
+
+    p {
+        text-align: justify;
+        text-align-last: right;
     }
+}
 
 
-    .vision,
-    .mission {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.vision-and-mission .vision,
+.vision-and-mission .mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .title {
-            display: flex;
-            gap: 20px;
-            align-items: end;
+.vision-and-mission .vision .title,
+.vision-and-mission .mission .title {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
 
-            img {
-                width: 50px;
-                height: 50px;
-                object-fit: contain;
-                border-radius: 0%;
-                box-shadow: none;
-            }
-        }
+.vision-and-mission .vision .title img,
+.vision-and-mission .mission .title img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 0%;
+    box-shadow: none;
+}
 
-        .text {
-            width: 55%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+.vision-and-mission .vision .text,
+.vision-and-mission .mission .text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-            p {
-                margin-bottom: 30px;
-                font-size: 20px;
-                font-weight: 500;
-                text-align: justify;
-            }
-        }
+.vision-and-mission .vision .text p,
+.vision-and-mission .mission .text p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
 
-        .illustration-wrapper {
-            width: 30%;
-        }
+.vision-and-mission .vision .illustration-wrapper,
+.vision-and-mission .mission .illustration-wrapper {
+    width: 30%;
+}
 
-        .illustration {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 50px 200px #929200a1;
-        }
-    }
+.vision-and-mission .vision .illustration,
+.vision-and-mission .mission .illustration {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 50px 200px #929200a1;
 }
 
 .team {
@@ -211,14 +220,14 @@ a {
             align-items: center;
             width: 100%;
             justify-content: space-between;
-    
+
             p {
                 font-size: 22px;
                 width: 50%;
                 padding: 20px;
                 border-left: 2px solid black;
             }
-    
+
             img {
                 width: 60px;
                 height: 60px;
@@ -226,7 +235,7 @@ a {
                 border-radius: 0%;
                 box-shadow: none;
             }
-    
+
             .titles {
                 display: flex;
                 flex-direction: column;
@@ -234,7 +243,7 @@ a {
                 gap: 20px;
                 width: 45%;
             }
-    
+
             .title1 {
                 display: flex;
                 justify-content: start;
@@ -251,12 +260,12 @@ a {
             flex-direction: column;
             width: 100%;
             justify-content: space-between;
-    
+
             p {
                 font-size: 22px;
                 width: 100%;
             }
-    
+
             img {
                 width: 60px;
                 height: 60px;
@@ -264,7 +273,7 @@ a {
                 border-radius: 0%;
                 box-shadow: none;
             }
-    
+
             .titles {
                 display: flex;
                 flex-direction: column;
@@ -272,7 +281,7 @@ a {
                 gap: 20px;
                 width: 100%;
             }
-    
+
             .title1 {
                 display: flex;
                 justify-content: start;
@@ -331,7 +340,7 @@ a {
         }
 
         h6 {
-            
+
             font-size: 18px;
         }
 
@@ -425,6 +434,7 @@ a {
 
                 @media (max-width: 720px) {
                     width: 100%;
+
                     h3 {
                         display: none;
                     }
