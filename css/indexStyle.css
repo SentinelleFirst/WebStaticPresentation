@@ -234,11 +234,13 @@
     .blog .blog-boxs {
         width: 100%;
         flex-wrap: wrap;
+        flex-basis: auto;
     }
 }
 
 .blog .blog-article {
     display: flex;
+    flex-basis: auto;
     justify-content: start;
     align-items: start;
     gap: 10px;
