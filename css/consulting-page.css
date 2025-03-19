@@ -1,0 +1,1087 @@
+.btn-box {
+    width: 250px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-nice {
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+    position: relative;
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-nice img {
+    opacity: 0.8;
+    margin-left: 20px;
+    width: 25px;
+    display: none;
+    transition: all 0.3s;
+}
+
+.btn-nice span {
+    transition: all 0.3s;
+    color: white;
+}
+
+.btn-nice::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #848404;
+    border-bottom-color: #848404;
+    transform: scale(0.1, 1);
+}
+
+.btn-nice:hover span {
+    letter-spacing: 2px;
+    color: black;
+}
+
+.btn-nice:hover img {
+    display: block;
+}
+
+.btn-nice:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-nice::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s;
+    background-color: #848404;
+
+    border-radius: 5px;
+}
+
+.btn-nice:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+.hero {
+    z-index: 1;
+    width: 100%;
+    min-height: 800px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.hero .divider {
+    width: 250px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 30px 0;
+}
+
+.hero .hero-img {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    filter: brightness(0.4);
+}
+
+.hero .hero-intro {
+    padding: 50px 5%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    animation: fadeInLeft 1s forwards;
+}
+
+.hero .hero-intro h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #FFC501;
+    font-weight: bold;
+}
+
+.hero .hero-intro p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* Vidéo de fond */
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
+    /* Met la vidéo derrière le contenu */
+    transform: translate(-40%, -40%);
+    /* Centre la vidéo */
+    object-fit: cover;
+    /* Assure que la vidéo couvre bien tout le fond */
+    filter: brightness(0.7);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a h5,
+a h6 {
+    color: black;
+}
+
+
+@media (min-width: 600px) {
+    .service-text {
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }  
+    
+    .service-text .title {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        width: 40%;
+    }
+
+    .service-text .title h1 {
+        font-size: 25px;
+
+    }
+
+    .service-text .title h3 {
+
+        color: #848404;
+    }
+
+    .service-text p {
+        padding: 20px 0px 20px 50px;
+        border-left: 2px solid black;
+        width: 55%;
+        font-size: 20px;
+        text-align: justify;
+    }  
+}
+
+@media (max-width: 600px) {
+    .service-text {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: space-between;
+        gap: 30px;
+    }    
+    
+    .service-text .title {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .service-text .title h1 {
+        font-size: 25px;
+
+    }
+
+    .service-text .title h3 {
+
+        color: #848404;
+    }
+
+    .service-text p {
+        width: 100%;
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+
+#service1 {
+    padding: 100px 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+#service1 .advantages {
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#service1 .advantages .center-ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #FACB01;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#service1 .advantages .back-img {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#service1 .advantages .adv-line {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    @media (max-width: 830px) {
+        margin: 20px 0px;
+    }
+}
+
+#service1 .advantages .adv-line1 {
+    max-width: 1100px;
+}
+
+#service1 .advantages .adv-line2 {
+    max-width: 1250px;
+}
+
+#service1 .advantages .adv {
+    @media (min-width: 830px) {
+        width: 350px !important;
+        height: 150px !important;
+    }
+    @media (min-width: 630px) {
+        width: 48%;
+        height: 200px;
+    }
+    @media (max-width: 630px) {
+        width: 100%;
+        height: 150px;
+    }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
+    background-color: white;
+}
+
+#service1 .advantages .adv img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    object-position: center;
+}
+
+#service1 .advantages .adv h4 {
+    width: calc(100% - 50px);
+    transition: all 0.5s ease-in-out;
+}
+
+#service1 .advantages .adv p {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#service1 .advantages .adv:hover {
+    padding-top: 20px;
+}
+
+#service1 .advantages .adv:hover h4 {
+    font-size: 20px;
+}
+
+#service1 .advantages .adv:hover p {
+    height: 100%;
+    font-size: 18px;
+}
+
+#service2 {
+    padding: 100px 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 650px) {
+    #service2 .text {
+        flex-direction: column;
+    }
+
+    #service2 .text .title,
+    #service2 .text p {
+        width: 100% !important;
+    }
+}
+
+#service2 .info-advs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 700px) {
+        position: relative;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #service2 .info-advs .other-img2 {
+        display: none !important;
+    }
+}
+
+@media (max-width: 700px) {
+    #service2 .info-advs .advantages {
+
+        width: 100% !important;
+    }
+
+    #service2 .info-advs .images-illustration .img1 {
+        display: none;
+    }
+
+    #service2 .info-advs .info-backgroung {
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+}
+
+@media (min-width: 700px) {
+    #service2 .info-advs .info-backgroung {
+        display: none;
+    }
+}
+
+#service2 .info-advs .other-img2 {
+    gap: 80px;
+}
+
+#service2 .info-advs .images-illustration {
+    width: 40%;
+    display: flex;
+}
+
+#service2 .info-advs .images-illustration .other-img {
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#service2 .info-advs .images-illustration img {
+    object-fit: cover;
+}
+
+#service2 .info-advs .images-illustration .img1,
+#service2 .info-advs .images-illustration .img2,
+#service2 .info-advs .images-illustration .img3 {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#service2 .info-advs .images-illustration .img1 {
+    width: 90%;
+    height: 300px;
+}
+
+#service2 .info-advs .images-illustration .img1 img {
+    width: 120%;
+    height: 120%;
+    object-position: bottom left;
+}
+
+#service2 .info-advs .images-illustration .img2 {
+    width: 80%;
+    height: 170px;
+}
+
+#service2 .info-advs .images-illustration .img2 img {
+    width: 120%;
+    height: 120%;
+    object-position: top center;
+}
+
+#service2 .info-advs .images-illustration .img3 {
+    width: 100%;
+    height: 170px;
+}
+
+#service2 .info-advs .images-illustration .img3 img {
+    width: 120%;
+    height: 120%;
+    object-position: bottom right;
+}
+
+#service2 .info-advs .advantages {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#service2 .info-advs .advantages .advs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    transition: all 0.5s ease;
+}
+
+#service2 .info-advs .advantages .advs .ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #FACB01;
+    transition: all 0.5s ease;
+}
+
+#service2 .info-advs .advantages .advs div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+    width: calc(100% - 50px);
+}
+    
+#service2 .info-advs .advantages .advs div h4 {
+    position: absolute;
+    height: 100px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+}
+
+#service2 .info-advs .advantages .advs div p {
+    position: absolute;
+    font-size: 20px;
+    height: 0px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+}
+
+#service2 .info-advs .advantages .advs:hover {
+    height: 150px;
+}
+
+#service2 .info-advs .advantages .advs:hover .ball {
+    height: 125px;
+}
+
+#service2 .info-advs .advantages .advs:hover h4 {
+    opacity: 0;
+}
+
+#service2 .info-advs .advantages .advs:hover p {
+    height: 150px;
+    transition: all 0.5s ease;
+}
+
+#service3 {
+    padding: 100px 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (max-width: 850px) {
+    #service3 .adv-line {
+        flex-wrap: wrap;
+    }
+    #service3 .adv-line2 {
+        margin: 40px 0px;
+        justify-content: center !important;
+    }
+
+    #service3 .center-ball, #service3 .back-img, #service3 .divider {
+        display: none !important;
+    }
+}
+
+#service3 .advantages {
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#service3 .advantages .center-ball {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: rgb(146, 146, 0);
+    background: radial-gradient(circle, rgba(146, 146, 0, 1) 40%, rgba(250, 203, 1, 1) 70%);
+    top: calc(50% - 75px);
+    left: 0%;
+}
+
+#service3 .advantages .divider {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    border-radius: 100px;
+    background-color: #FACB01;
+    top: calc(50% - 4px);
+    left: 0%;
+}
+
+#service3 .advantages .back-img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#service3 .advantages .back-img .l1 {
+    display: flex;
+    justify-content: start;
+    width: 65%;
+    height: 45%;
+}
+
+#service3 .advantages .back-img .l1 .line {
+    width: 50%;
+    height: 100%;
+    border-bottom: 4px solid #FACB01;
+    border-right: 8px solid #FACB01;
+    border-bottom-right-radius: 50px;
+}
+
+#service3 .advantages .back-img .l2 {
+    display: flex;
+    justify-content: start;
+    width: 70%;
+    height: 45%;
+}
+
+#service3 .advantages .back-img .l2 .line {
+    width: 50%;
+    height: 100%;
+    border-top: 4px solid #FACB01;
+    border-right: 8px solid #FACB01;
+    border-top-right-radius: 50px;
+}
+
+#service3 .advantages .adv-line {
+    display: flex;
+    width: 100%;
+}
+
+#service3 .advantages .adv-line1 {
+    max-width: 1100px;
+    justify-content: center;
+    gap: 40px;
+}
+
+#service3 .advantages .adv-line2 {
+    justify-content: end;
+}
+
+#service3 .advantages .adv {
+    position: relative;
+    @media (min-width: 600px) {
+        width: 350px;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
+    background-color: white;
+}
+
+#service3 .advantages .adv img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    object-position: center;
+}
+
+#service3 .advantages .adv h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 130px;
+    width: calc(100% - 50px);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+#service3 .advantages .adv p {
+    width: calc(100% - 50px);
+    margin-bottom: -20px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#service3 .advantages .adv:hover h4 {
+    height: 0px;
+}
+
+#service3 .advantages .adv:hover p {
+    height: 115px;
+    font-size: 20px;
+}
+
+#service4 {
+    position: relative;
+    @media (min-width: 600px) {
+        padding: 100px 5%;
+    }
+    @media (max-width: 600px) {
+        padding: 100px 20px;
+    }
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1024px) {
+    #service4 .btn1 {
+        display: none;
+    }
+
+    #service4 .btn2 {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #service4 .btn1 {
+        display: block;
+    }
+
+    #service4 .btn2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    #service4 .text {
+        max-width: 75% !important;
+    }
+
+    #service4 .advantages {
+        width: 75% !important;
+    }
+
+    #service4 .advantages .advs {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    #service4 .back-img {
+        width: 100% !important;
+        right: 0% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #service4 .text {
+        max-width: 100% !important;
+    }
+
+    #service4 .advantages {
+        width: 100% !important;
+    }
+
+    #service4 .advantages .advs {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+}
+
+#service4 .back-img {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    right: 5%;
+    filter: brightness(0.3);
+    z-index: -1;
+}
+
+#service4 .advantages {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: space-around;
+    gap: 10px;
+
+    @media (min-width: 875px) {
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+#service4 .advantages .advs {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+}
+
+#service4 .advantages .advs img {
+    width: 70px;
+    height: 70px;
+    padding-right: 20px;
+    object-fit: contain;
+}
+
+#service4 .advantages .advs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#service4 .advantages .advs div p {
+    font-size: 17px;
+}
+
+#service4 .text {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: start;
+    color: white;
+}
+
+#service4 .text .btn-nice:hover span {
+    color: white !important;
+}
+
+#service4 .text .title {
+    color: #848404;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#service4 .text .title .divider {
+    width: 30%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#service4 .text p {
+    font-size: 30px;
+    text-align: justify;
+}
+
+.questions {
+    margin: 100px 5%;
+    border-radius: 15px;
+    border: 4px solid black;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+    @media (min-width: 850px) {
+        align-items: start;
+    }
+
+    @media (max-width: 850px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+@media (min-width: 850px) {
+    .questions .faqs,
+    .questions .answers {
+        width: 48%;
+    }
+
+    .questions .questions-list {
+        max-height: 550px;
+    }
+
+    .questions .answer-box {
+        height: 550px;
+    }
+}
+
+@media (max-width: 850px) {
+    .questions .faqs,
+    .questions .answers {
+        width: 100%;
+    }
+
+    .questions .questions-list {
+        max-height: 250px;
+
+        padding-bottom: 20px;
+        border-bottom: 2px solid black;
+    }
+
+    .questions .answer-box {
+        min-height: 500px;
+    }
+}
+
+.questions h1 {
+    color: #0C513F;
+}
+
+.questions .faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+}
+
+.questions .answers {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+    height: 100%;
+}
+
+.questions .questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: start;
+    align-items: start;
+}
+
+.questions .questions-list .question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0c513f15;
+    transition: all 0.5s ease;
+    gap: 10px;
+}
+
+.questions .questions-list .question img {
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    object-position: center;
+    transition: all 0.5s ease;
+}
+
+.questions .questions-list .question.active {
+    background-color: black;
+}
+
+.questions .questions-list .question.active h5 {
+    color: white;
+}
+
+.questions .questions-list .question.active img {
+    opacity: 1;
+}
+
+.questions .answer-box {
+    width: 100%;
+    padding: 20px;
+    background-color: #FFC501;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.questions .answer-box img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.questions .answer-box .answer {
+    position: relative;
+    width: 100%;
+}
+
+.questions .answer-box .answer p {
+    position: absolute;
+    font-size: 23px;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+
+    @media (max-width: 400px) {
+        font-size: 20px !important;
+    }
+}
+
+.questions .answer-box .answer p.active {
+    opacity: 1;
+}
+
+
+
+.more-questions {
+    min-height: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #124140;
+    margin: 100px 5%;
+    padding: 30px;
+    color: white;
+    margin-top: 80px;
+}
+
+.more-questions h2,
+.more-questions h5,
+.more-questions a {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.more-questions h5 {
+    margin: 20px 0;
+}
+
+.more-questions a {
+    min-height: 50px;
+    font-size: 20px;
+    color: #134140;
+    font-weight: 600;
+    background-color: #D9D9D9;
+}

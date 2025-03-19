@@ -1,0 +1,125 @@
+.hero {
+    z-index: 1;
+    width: 100%;
+    min-height: 900px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
+}
+
+.hero .divider {
+    width: 250px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.hero .hero-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    filter: brightness(0.3);
+}
+
+.hero .hero-intro {
+    max-width: 80%;
+    margin: 200px 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInLeft 1s forwards;
+    gap: 30px;
+}
+
+.hero .hero-intro h1 {
+    font-size: 35px;
+    color: #FFC501;
+    font-weight: bold;
+}
+
+.hero .hero-intro h3 {
+    font-size: 30px;
+    
+}
+
+.hero .hero-intro p {
+    font-size: 23px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a h5,
+a h6 {
+    color: black;
+}
+
+#terms-of-use {
+    display: none;
+}
+
+#privacy-policy {
+    display: none;
+}
+
+#conditions-of-sales {
+    display: none;
+}
+
+#social-media-codes {
+    display: none;
+}
+
+#media-house-rules {
+    display: none;
+}
+
+.sectionActive {
+    display: flex !important;
+}
+
+#terms-of-use, 
+#privacy-policy, 
+#conditions-of-sales, 
+#social-media-codes, 
+#media-house-rules {
+    padding: 50px 10%;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+#terms-of-use p, 
+#privacy-policy p, 
+#conditions-of-sales p, 
+#social-media-codes p, 
+#media-house-rules p {
+    font-size: 22px;
+}
+
+#terms-of-use ol, 
+#privacy-policy ol, 
+#conditions-of-sales ol, 
+#social-media-codes ol, 
+#media-house-rules ol {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    gap: 30px;
+}
+
+#terms-of-use ol li, 
+#privacy-policy ol li, 
+#conditions-of-sales ol li, 
+#social-media-codes ol li, 
+#media-house-rules ol li {
+    font-size: 30px; /* Ajustez la taille selon vos besoins */
+}
