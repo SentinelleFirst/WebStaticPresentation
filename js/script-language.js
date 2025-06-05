@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     translation = translateHeaderFooterEN[key];
                 } else {
                     translation = translationsEN[key];
+                    console.log(translationsEN[key]);
                 }
             } else {
                 if (key.slice(0, 6) === "header" || key.slice(0, 6) === "footer") {
